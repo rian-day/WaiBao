@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理员界面</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/manage.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body class="home">
+<div class="move-right">
+	<div class="header">
+		<div class="box-left">
+			<span class="glyphicon glyphicon-th-list"></span>
+			<span>menu</span>
+		</div>
+		<div class="box-right">
+			<div class="search-info">
+				<span class="glyphicon glyphicon-search"></span>
+				<span>search for inspiration</span>
+			</div>
+			<div class="co-logo"></div>
+			<div class="login-btn">
+				<a class="totop-img" href="javascript:void(0);"><span class="glyphicon glyphicon-collapse-up"></span></a>
+				<a class="login-font" href=""><span>submit your site</span></a>
+			</div>
+			<div class="logo-header">
+				<img src="images/logo.png">
+			</div>
+		</div>
+		<div class="box-right-search">
+			<div class="to-dropdown">
+				<span class="search-type">all</span><span class="glyphicon glyphicon-triangle-bottom"></span>
+				<div class="menu-dropdown">
+                    <ul>
+                        <li><strong><a href="#">ALL</a></strong></li>
+                        <li><strong><a href="#">Websites</a></strong></li>
+                        <li><strong><a href="#">Collections</a></strong></li>
+                        <li><strong><a href="#">Elements</a></strong></li>
+                        <li><strong><a href="#">Magazine</a></strong></li>
+                        <li><strong><a href="#">Jobs</a></strong></li>
+                        <li><strong><a href="#">Users</a></strong></li>
+                    </ul>
+                </div>
+			</div>
+			<input type="text" id="search-text" placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)" data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)" data-placeholder-mobile="SEARCH FOR INSPIRATION" autocomplete="off" class="search-input" value="">
+			<div class="search-goto">
+	            <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+	        </div>
+	        <div class="box-close">
+			    <span class="glyphicon glyphicon-remove"></span>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-content" style="display: block;"></div>
+
+	<div class="showview">
+		<div class="head-view">添加考生</div>
+
+		<div class="add-people">
+            <div class="form-group">
+                <label for="user_name" class="control-label">邮箱:</label>
+                <input type="text" name="user_name">
+            </div>
+            <div class="form-group">
+                <label for="surname" class="control-label">姓名:</label>
+                <input type="text" name="surname">
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-label">密码:</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-group">
+                <label for="passwordSafe" class="control-label">确认密码:</label>
+                <input type="password" name="passwordSafe">
+            </div>
+            <!-- <div class="form-group">
+                <label for="phone" class="control-label">手机:</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+            <div class="form-group">
+                <label for="identity_card" class="control-label">证件号:</label>
+                <input type="text" name="identity_card">
+            </div>
+            <div class="form-group">
+                <label for="email" class="control-label">邮箱:</label>
+                <input type="email" name="email">
+            </div> -->
+            <div class="form-group-sex">
+                <label for="sex" class="control-label">性别:</label>
+                <input name="sex" type="radio" value="1" checked="" style="width:inherit">
+                男&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input name="sex" type="radio" value="0" style="width:inherit"> 女
+            </div>
+            <div class="row-btn" style="text-align:center;">
+                <button type="button" class="btn btn-blue-h">保存</button>
+            </div>
+		</div>
+	</div>
+
+</div>
+<div class="menu">
+	<div class="menu-in">
+		<div class="menu-top">
+			<div class="pull-left">
+					<span>setting</span>
+			</div>
+			<div class="pull-right">
+				<span>close</span>
+				<span class="glyphicon glyphicon-remove"></span>
+			</div>
+		</div>
+		<div class="second-menu">
+			<div>home <span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			<ul class="second-menu-home">
+				<a href=""><li>1-1</li></a>
+				<a href=""><li>1-2</li></a>
+				<a href=""><li>1-3</li></a>
+			</ul>
+		</div>
+		<div class="second-menu">
+			<div>winners <span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			<ul class="second-menu-winners">
+				<a href=""><li>2-1</li></a>
+				<a href=""><li>2-2</li></a>
+				<a href=""><li>2-3</li></a>
+			</ul>
+		</div>
+		<div class="menu-foot"></div>
+	</div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/manage.js"></script>
+<script src="./js/jquery.jqpagination.js"></script>
+</body>
+</html>
