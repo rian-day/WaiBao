@@ -1,0 +1,277 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>管理员界面</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/manage.css">
+    <link rel="stylesheet" type="text/css" href="css/student-info.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body class="home">
+    <div class="move-right">
+        <div class="header">
+            <div class="box-left">
+                <span class="glyphicon glyphicon-th-list"></span>
+                <span>menu</span>
+            </div>
+            <div class="box-right">
+                <div class="search-info">
+                    <span class="glyphicon glyphicon-search"></span>
+                    <span>search for inspiration</span>
+                </div>
+                <div class="co-logo"></div>
+                <div class="login-btn">
+                    <a class="totop-img" href="javascript:void(0);"><span class="glyphicon glyphicon-collapse-up"></span></a>
+                    <a class="login-font" href=""><span>submit your site</span></a>
+                </div>
+                <div class="logo-header">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+            <div class="box-right-search">
+                <div class="to-dropdown">
+                    <span class="search-type">all</span><span class="glyphicon glyphicon-triangle-bottom"></span>
+                    <div class="menu-dropdown">
+                        <ul>
+                            <li><strong><a href="#">ALL</a></strong></li>
+                            <li><strong><a href="#">Websites</a></strong></li>
+                            <li><strong><a href="#">Collections</a></strong></li>
+                            <li><strong><a href="#">Elements</a></strong></li>
+                            <li><strong><a href="#">Magazine</a></strong></li>
+                            <li><strong><a href="#">Jobs</a></strong></li>
+                            <li><strong><a href="#">Users</a></strong></li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" id="search-text" placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)" data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)" data-placeholder-mobile="SEARCH FOR INSPIRATION" autocomplete="off" class="search-input" value="">
+                <div class="search-goto">
+                    <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+                </div>
+                <div class="box-close">
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
+            </div>
+        </div>
+        <div class="overlay-content" style="display: block;"></div>
+        <div class="showview">
+            <div class="head-view">基本信息</div>
+            <div class="list-view">
+                <div class="student-img-div-perent">
+                    <div class="student-img-div">
+                        <a href="javascript:void(0)">
+                            <img src="images/avatar.jpg" alt="" class="touxiang">
+                            <div class="student-img-edit">
+                                <span><img src="images/camera.png" class="camera"></span><span class="edImg">更换头像</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ul>
+                    <!--  显示基本信息 -->
+                    <li class="studentInfo">
+                        <div class="student-img-div-perent">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <p>-姓名-</p>
+                                    </td>
+                                    <td class="name">张三</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>-性别-</p>
+                                    </td>
+                                    <td class="sex">男</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>-邮箱-</p>
+                                    </td>
+                                    <td class="mail">114074@qq.com</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>-职业-</p>
+                                    </td>
+                                    <td class="pro">java工程师</td>
+                                </tr>
+                            </table>
+                            <div class="Ae">
+                                <a href="javascript:void(0)" class="editMark">修改基本信息</a>
+                                <a href="javascript:void(0)" class="editPwd" >修改密码</a>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- 修改密码 -->
+                    <li class="editPassword">
+                        <div class="student-img-div-perent">
+                            <div class="pwdAlert"><span style="margin-left: 5px;">输入的密码不一致</span>
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                            </div>
+                            <form action="login.do">
+                            <table class="tableEpI">
+                                <tr>
+                                    <td>
+                                        <p>-邮箱-</p>
+                                    </td>
+                                    <td class="mailEpd">
+                                        <input type="text" readonly="readonly">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>-密码-</p>
+                                    </td>
+                                    <td>
+                                        <input type="password" name="password" class="password1">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>-确定密码-</p>
+                                    </td>
+                                    <td>
+                                        <input type="password" class="password2">
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="Ae AePwd">
+                                <a href="#" class="cancelMark">取消修改</a>
+                                <input  type="submit"  value="确定修改" class="ed" id="PwdEdit" >
+                                <a href=""></a>
+                            </div>
+                            </form>
+                        </div>
+                    </li>
+                    <!-- 修改基本信息  -->
+                    <li class="studentEdit">
+                        <div class="student-img-div-perent">
+                            <table class="tableEbi">
+                                <form action="">
+                                    <tr>
+                                        <td>
+                                            <p>-姓名-</p>
+                                        </td>
+                                        <td>
+                                            <input type="text">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>-性别-</p>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <input type="text" name="sex" value="web" class="btn jobShow" id='sexShow' readonly="readonly">
+                                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li>
+                                                        <p class="jobSelect">男</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="jobSelect">女</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>-邮箱-</p>
+                                        </td>
+                                        <td>
+                                            <input type="text" readonly="readonly" name="mail">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>-职业-</p>
+                                        </td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <input type="text" name="pro" value="web" class="btn jobShow" readonly="readonly" id="jobShow">
+                                                <button class="btn dropdown-toggle" data-toggle="dropdown">
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li>
+                                                        <p class="jobSelect" id="jobSelect">web工程师</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="jobSelect" id="jobSelect">java工程师</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </form>
+                            </table>
+                            <div class="Ae">
+                                <a href="#" class="cancelMark">取消修改</a>
+                                <input type="submit" value="确定修改" class="ed" id="BaseEdit">
+                                <a href=""></a>
+                            </div>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="menu-in">
+            <div class="menu-top">
+                <div class="pull-left">
+                    <span></span>
+                </div>
+                <div class="pull-right">
+                    <span>close</span>
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
+            </div>
+            <div class="second-menu">
+                <div class="home">题库<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                <ul class="second-menu-home">
+                    <a href="">
+                        <li>随机试卷</li>
+                    </a>
+                    <a href="">
+                        <li>套题</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="second-menu">
+                <div class="winners">个人中心<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                <ul class="second-menu-winners ">
+                    <a href="">
+                        <li>基本信息</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="second-menu">
+                <div class="history">历史记录<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                <ul class="second-menu-history ">
+                    <a href="">
+                        <li>考试历史记录</li>
+                    </a>
+                    <a href="">
+                        <li>错题收集</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu-foot"></div>
+        </div>
+    </div>
+</body>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/manage.js"></script>
+<script src="./js/jquery.jqpagination.js"></script>
+<script type="text/javascript" src="js/student_info.js"></script>
+
+</html>

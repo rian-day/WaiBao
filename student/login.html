@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/htools.select.skin.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+
+
+
+	</head>
+	<body  id="gtco-header" class="gtco-cover" role="banner" style="background-image: url(images/login.jpg);background-attachment: fixed;">
+
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					<div id="gtco-logo"><a href="index.html">Lanou<em>.</em></a></div>
+				</div>
+				<div class="col-xs-8 text-right menu-1">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="#">移动端</a></li>
+						<li><a href="#">开始考试</a></li>
+						<li class="btn-cta"><a href="signup.html"><span>注册</span></a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+	
+	<header>
+		<div class="overlay"></div>
+		<div class="gtco-container">
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0 text-left">
+					<div class="row row-mt-15em">
+						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+							<span class="intro-text-small" id="box1">Welcome to lanou</span>
+							<h1 id="box1">Let education return to its essence</h1>	
+						</div>
+
+
+
+
+<!-- 登陆 -->
+
+						<div class="loginul">
+							<div class="login-title">LOGIN</div>
+							<div class="login-content">
+								<div class="zhanghao">
+									<label class="content-lable">Email</label>
+									<br>
+									<input type="text" name="Email" class="Emails">
+								</div>
+								<div class="mima">
+									<label class="content-lable">Email</label>
+									<label class="content-lable2"><a href="">忘记密码</a><img src="images/wenhao.png"></label>
+									<br>
+									<input type="text" name="Email" class="Passwords">
+								</div>
+								<div class="denglu">
+									<input type="submit" value="LOGIN" class="btn btn-primary">
+									<div class="tosign">
+									还没有账号？
+										<a href="javascript:void(0);" class="sss">立即加入</a>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+
+
+
+<!-- 注册 -->
+
+	<div id="signup" style="display: none;">
+        <form id="msform">
+            <!-- progressbar -->
+            <ul id="progressbar">
+                <li class="active">基本信息</li>
+                <li>选择职业</li>
+                <li>邮箱验证</li>
+            </ul>
+            <!-- fieldsets -->
+            <fieldset>
+                <h2 class="fs-title">基本信息</h2>
+                <h3 class="fs-subtitle">This is step 1</h3>
+                <div class="lables1">Email</div>
+                <input type="text" name="email" placeholder="邮箱" class="Email"  />
+                <div class="prompt1"></div>
+                <div class="lables2">Password</div>
+                <input type="password" name="pass" placeholder="密码" class="pass" />
+                <div class="prompt2"></div>
+                <div class="lables3">Confirm Password</div>
+                <input type="password" name="cpass" placeholder="密码验证" class="cpass" />
+                <div class="prompt3"></div>
+                <input type="button" name="next" class="next1 action-button1" value="Next" id="s1" />
+                <div class="tosign2">
+										<a href="javascript:void(0);" class="qqq">返回登陆</a>
+									</div>
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">选择职业</h2>
+                <h3 class="fs-subtitle">Choosing a career</h3>
+                <select id="myselect">
+                    <option value="1">web工程师</option>
+                    <option value="2">java工程师</option>
+                </select>
+                <br>
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="button" name="next" class="next action-button" value="Next" />
+            </fieldset>
+            <fieldset>
+                <h2 class="fs-title">邮箱验证</h2>
+                <h3 class="fs-subtitle">Mailbox validation</h3>
+                <input type="text" name="fname" placeholder="First Name" class="Email1" disabled="true" />
+                <input type="text" name="yanzheng"  size="30" style="width: 50%;" placeholder="请输入验证码">
+
+
+                <input type="button" name="yanzheng1" class="btn btn-info" value="发送验证码" style="width: 40%;background:rgb(39,174,96);margin-top: 5px;height: 37px;border-radius: 4px;color: white" 
+                     onclick="settime(this)"/>
+
+                <input type="button" name="previous" class="previous action-button" value="Previous" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+            </fieldset>
+        </form>
+    </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	
+	<!-- jQuery -->
+	<script src="js/jquery-2.1.1.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<!-- Main -->
+	<script src="js/login.js"></script>
+	<script src="js/signup.js"></script>
+	<script type="text/javascript" src="js/jquery.htools.select.js"></script>
+	<script src="js/yanzheng.js"></script>
+
+	</body>
+</html>
+
