@@ -404,9 +404,16 @@ body{
 	.showview .add-title{
 		height: auto;
 	}
-	.box-title3 > .keyList{
-		margin-left: 70px;
-	}
+	
+		.box-title .keyList > textarea{
+			display: inline-block;
+		}
+		.box-title .keyList .textarea{
+			width: 80%;
+		}
+			.box-title3 .keyList .textarea{
+				margin-left: 70px;
+			}
 		.add-title form{
 			width: 33%;
 			float: left;

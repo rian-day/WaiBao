@@ -203,18 +203,18 @@ $(document).ready(function() {
             if ($(".box-title1 #behide5").attr('class')=='keyList behide5') {
                 if ($(".box-title1 #behide4").attr('class')=='keyList behide4') {
                     $(".box-title1 #behide3").attr('class','keyList behide3');
-                    $(".box-title1 #behide3").text("");
+                    $(".box-title1 #behide3 p").text("");
                 }else{
                     $(".box-title1 #behide4").attr('class','keyList behide4');
-                    $(".box-title1 #behide4").text("");
+                    $(".box-title1 #behide4 p").text("");
                 }
             }else{
                 $(".box-title1 #behide5").attr('class','keyList behide5');
-                $(".box-title1 #behide5").text("");
+                $(".box-title1 #behide5 p").text("");
             }
         }else{
             $(".box-title1 #behide6").attr('class','keyList behide6');
-            $(".box-title1 #behide6").text("");
+            $(".box-title1 #behide6 p").text("");
         }
     });
     $(".box-title2 .glyphicon").click(function(){
@@ -222,43 +222,42 @@ $(document).ready(function() {
             if ($(".box-title2 #behide5").attr('class')=='keyList behide5') {
                 if ($(".box-title2 #behide4").attr('class')=='keyList behide4') {
                     $(".box-title2 #behide3").attr('class','keyList behide3');
-                    $(".box-title2 #behide3").text("");
+                    $(".box-title2 #behide3 p").text("");
                 }else{
                     $(".box-title2 #behide4").attr('class','keyList behide4');
-                    $(".box-title2 #behide4").text("");
+                    $(".box-title2 #behide4 p").text("");
                 }
             }else{
                 $(".box-title2 #behide5").attr('class','keyList behide5');
-                $(".box-title2 #behide5").text("");
+                $(".box-title2 #behide5 p").text("");
             }
         }else{
             $(".box-title2 #behide6").attr('class','keyList behide6');
-            $(".box-title2 #behide6").text("");
+            $(".box-title2 #behide6 p").text("");
         }
     });
     $(".box-title3 .glyphicon").click(function(){
-        alert(1);
         if ($(".box-title3 #behide6").attr('class')=='keyList behide6') {
             if ($(".box-title3 #behide5").attr('class')=='keyList behide5') {
                 if ($(".box-title3 #behide4").attr('class')=='keyList behide4') {
                     if ($(".box-title3 #behide3").attr('class')=='keyList behide3') {
                         $(".box-title3 #behide2").attr('class','keyList behide2');
-                        $(".box-title3 #behide2").text("");
+                        $(".box-title3 #behide2 p").text("");
                     }else{
                         $(".box-title3 #behide3").attr('class','keyList behide3');
-                        $(".box-title3 #behide3").text("");
+                        $(".box-title3 #behide3 p").text("");
                     }
                 }else{
                     $(".box-title3 #behide4").attr('class','keyList behide4');
-                    $(".box-title3 #behide4").text("");
+                    $(".box-title3 #behide4 p").text("");
                 }
             }else{
-                $(".box-title4 #behide5").attr('class','keyList behide5');
-                $(".box-title4 #behide5").text("");
+                $(".box-title3 #behide5").attr('class','keyList behide5');
+                $(".box-title3 #behide5 p").text("");
             }
         }else{
-            $(".box-title4 #behide6").attr('class','keyList behide6');
-            $(".box-title4 #behide6").text("");
+            $(".box-title3 #behide6").attr('class','keyList behide6');
+            $(".box-title3 #behide6 p").text("");
         }
     });
 });
