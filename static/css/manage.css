@@ -404,6 +404,9 @@ body{
 	.showview .add-title{
 		height: auto;
 	}
+	.box-title3 > .keyList{
+		margin-left: 70px;
+	}
 		.add-title form{
 			width: 33%;
 			float: left;
@@ -431,11 +434,22 @@ body{
     		vertical-align: middle;
     		margin: 20px 0px;
 		}
+		.behide2,.behide3,.behide4,.behide5,.behide6{
+			height: 0px;
+			opacity: 0;
+		}
+		.box-title .glyphicon{
+			cursor: pointer;
+		}
 		.keyLeft{
 			width: 70px;
 			display: inline;
 			padding-left: 25px;
 		}
+			.box-title .glyphicon{
+				color: red;
+				margin-left: 10px;
+			}
 			.textarea > div:nth-child(1){
 				opacity: 0;
 				height: 0px;
@@ -458,9 +472,10 @@ body{
 			color: #A9B3BF;
 		}
 		.q-submit{
+			width: 100%;
 			text-align: center;
 		}
-		.q-submit > input[type="submit"]{
+		.q-submit > input[type="submit"],.q-submit > div{
 			width: 104px;
 			background-color: #6EAEF0;
 		    border: 1px solid #588BC0;
@@ -470,8 +485,15 @@ body{
 		    font-size: 12px;
 		    letter-spacing: -0.44px;
 		    line-height: 19px;
+		    margin: auto;
+		    -moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			-khtml-user-select: none;
+			user-select: none;
+			cursor: pointer;
 		}
-		.q-submit > input[type="submit"]:hover{
+		.q-submit > input[type="submit"]:hover,.q-submit > div:hover{
 			background-color: #5d9cec;
 		}
 	.add-people{

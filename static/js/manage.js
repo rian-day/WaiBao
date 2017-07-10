@@ -137,4 +137,128 @@ $(document).ready(function() {
 			});
 		$(this).height(150);
     });
+    $(".danxuan-add-daan").click(function(){
+        if ($(".box-title1 #behide6").attr('class')=='keyList behide6') {
+            if ($(".box-title1 #behide5").attr('class')=='keyList behide5') {
+                if ($(".box-title1 #behide4").attr('class')=='keyList behide4') {
+                    if ($(".box-title1 #behide3").attr('class')=='keyList behide3') {
+                        $(".box-title1 #behide3").attr('class','keyList');
+                    }else{
+                        $(".box-title1 #behide4").attr('class','keyList');
+                    }
+                }else{
+                    $(".box-title1 #behide5").attr('class','keyList');
+                }
+            }else{
+                $(".box-title1 #behide6").attr('class','keyList');
+            }
+        }else{
+            alert('只能添加六个选项');
+        }
+    });
+    $(".duoxuan-add-daan").click(function(){
+        if ($(".box-title2 #behide6").attr('class')=='keyList behide6') {
+            if ($(".box-title2 #behide5").attr('class')=='keyList behide5') {
+                if ($(".box-title2 #behide4").attr('class')=='keyList behide4') {
+                    if ($(".box-title2 #behide3").attr('class')=='keyList behide3') {
+                        $(".box-title2 #behide3").attr('class','keyList');
+                    }else{
+                        $(".box-title2 #behide4").attr('class','keyList');
+                    }
+                }else{
+                    $(".box-title2 #behide5").attr('class','keyList');
+                }
+            }else{
+                $(".box-title2 #behide6").attr('class','keyList');
+            }
+        }else{
+            alert('只能添加六个选项');
+        }
+    });
+    $(".tiankong-add-daan").click(function(){
+        if ($(".box-title3 #behide6").attr('class')=='keyList behide6') {
+            if ($(".box-title3 #behide5").attr('class')=='keyList behide5') {
+                if ($(".box-title3 #behide4").attr('class')=='keyList behide4') {
+                    if ($(".box-title3 #behide3").attr('class')=='keyList behide3') {
+                        if ($(".box-title3 #behide2").attr('class')=='keyList behide2') {
+                            $(".box-title3 #behide2").attr('class','keyList');
+                        }else{
+                            $(".box-title3 #behide3").attr('class','keyList');
+                        }
+                    }else{
+                        $(".box-title3 #behide4").attr('class','keyList');
+                    }
+                }else{
+                    $(".box-title3 #behide5").attr('class','keyList');
+                }
+            }else{
+                $(".box-title3 #behide6").attr('class','keyList');
+            }
+        }else{
+            alert('只能添加六个选项');
+        }
+    });
+    $(".box-title1 .glyphicon").click(function(){
+        if ($(".box-title1 #behide6").attr('class')=='keyList behide6') {
+            if ($(".box-title1 #behide5").attr('class')=='keyList behide5') {
+                if ($(".box-title1 #behide4").attr('class')=='keyList behide4') {
+                    $(".box-title1 #behide3").attr('class','keyList behide3');
+                    $(".box-title1 #behide3").text("");
+                }else{
+                    $(".box-title1 #behide4").attr('class','keyList behide4');
+                    $(".box-title1 #behide4").text("");
+                }
+            }else{
+                $(".box-title1 #behide5").attr('class','keyList behide5');
+                $(".box-title1 #behide5").text("");
+            }
+        }else{
+            $(".box-title1 #behide6").attr('class','keyList behide6');
+            $(".box-title1 #behide6").text("");
+        }
+    });
+    $(".box-title2 .glyphicon").click(function(){
+        if ($(".box-title2 #behide6").attr('class')=='keyList behide6') {
+            if ($(".box-title2 #behide5").attr('class')=='keyList behide5') {
+                if ($(".box-title2 #behide4").attr('class')=='keyList behide4') {
+                    $(".box-title2 #behide3").attr('class','keyList behide3');
+                    $(".box-title2 #behide3").text("");
+                }else{
+                    $(".box-title2 #behide4").attr('class','keyList behide4');
+                    $(".box-title2 #behide4").text("");
+                }
+            }else{
+                $(".box-title2 #behide5").attr('class','keyList behide5');
+                $(".box-title2 #behide5").text("");
+            }
+        }else{
+            $(".box-title2 #behide6").attr('class','keyList behide6');
+            $(".box-title2 #behide6").text("");
+        }
+    });
+    $(".box-title3 .glyphicon").click(function(){
+        alert(1);
+        if ($(".box-title3 #behide6").attr('class')=='keyList behide6') {
+            if ($(".box-title3 #behide5").attr('class')=='keyList behide5') {
+                if ($(".box-title3 #behide4").attr('class')=='keyList behide4') {
+                    if ($(".box-title3 #behide3").attr('class')=='keyList behide3') {
+                        $(".box-title3 #behide2").attr('class','keyList behide2');
+                        $(".box-title3 #behide2").text("");
+                    }else{
+                        $(".box-title3 #behide3").attr('class','keyList behide3');
+                        $(".box-title3 #behide3").text("");
+                    }
+                }else{
+                    $(".box-title3 #behide4").attr('class','keyList behide4');
+                    $(".box-title3 #behide4").text("");
+                }
+            }else{
+                $(".box-title4 #behide5").attr('class','keyList behide5');
+                $(".box-title4 #behide5").text("");
+            }
+        }else{
+            $(".box-title4 #behide6").attr('class','keyList behide6');
+            $(".box-title4 #behide6").text("");
+        }
+    });
 });
