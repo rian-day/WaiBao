@@ -426,6 +426,7 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   background: rgba(0, 0, 0, 0.5);
   height: 100vh;
+  margin-bottom: -100%;
 }
 .gtco-cover > .gtco-container {
   position: relative;
@@ -1191,7 +1192,9 @@ opacity: 1; /*结尾状态 透明度为1*/
   color: rgb(119,119,119);
 }
 .content-lable2{
-  margin-left: 50%;
+  float: right;
+  margin-right: 8%;
+
 }
 .content-lable2 a{
   color: #FF9933;
