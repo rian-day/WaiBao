@@ -1,0 +1,174 @@
+.student-img-div-perent {
+    float: left;
+    margin: 4%;
+    text-align: center;
+}
+
+.student-img-div {
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.touxiang {
+    width: 150px;
+    height: 150px;
+    margin: 10px 10% 0 10%;
+    border: 10px solid rgb(244, 247, 246);
+    border-radius: 50%;
+    -webkit-box-shadow: 1px 1px 1px #f4f7f6;
+    -moz-box-shadow: 1px 1px 1px #f4f7f6;
+    box-shadow: 1px 1px 1px #f4f7f6;
+}
+
+.student-img-edit {
+    margin-top: 40px;
+    text-align: center;
+    color: black;
+}
+
+.btn-primary {
+    height: 50px;
+    -webkit-box-shadow: 3px 3px 3px #337ab7;
+    -moz-box-shadow: 3px 3px 3px #337ab7;
+    box-shadow: 3px 3px 3px #337ab7;
+}
+
+.student-img-div-perent table {
+    width: 500px;
+    height: 100%;
+}
+
+.student-img-div-perent table tr td {
+    font-size: 20px;
+    padding: 13px;
+}
+
+.camera {
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+    background-size: 50px;
+}
+
+.btn-edit {
+    float: right;
+}
+
+.student-img-div-perent div {
+    height: 100%;
+    font-size: 20px;
+    float: right;
+    width: 100%;
+    margin-left: 0;
+}
+
+.showview .list-view {
+    height: calc(100vh - 200px);;
+    padding: 38px;
+    text-align: center;
+}
+
+.studentInfo,
+.studentEdit,
+.editPassword {
+    float: left;
+    list-style: none;
+}
+
+.studentEdit,
+.editPassword {
+    display: none;
+}
+
+input[type='text'],
+input[type='password'] {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: #6a6f77;
+    border: 1px solid #c8cccf;
+    border-radius: 4px;
+    outline: 0;
+    -web-kit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+    border: 2px solid #337ab7;
+}
+
+.dropdown-menu li {
+    float: none;
+}
+
+.dropdown-menu {
+    width: 205px;
+}
+
+.jobShow {
+    font-size: 18px;
+    font-weight: 500;
+    width: 200px;
+}
+
+.dropdown-toggle {
+    padding: 8px;
+    padding-bottom: 9px;
+}
+
+.Ae {
+    margin-top: 20px;
+}
+
+.jobSelect {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.cancelMark {
+    border-right: 1px solid black;
+    padding-right: 20px;
+}
+
+.ed,
+.edImg {
+    margin-left: 20px;
+    solid black;
+    color: #23527c;
+    background-color: white;
+    border: 0px
+}
+
+.ed:focus,
+.ed:hover,
+.edImg:focus,
+.edImg:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.editMark {
+    padding-right: 20px;
+    border-right: 1px solid black;
+}
+
+.editPwd {
+    margin-left: 20px;
+}
+
+.AePwd {
+    margin-top: 25px;
+}
+
+.pwdAlert {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 15px;
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    border-radius: 4px;
+    display: none
+}
