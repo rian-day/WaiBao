@@ -4,6 +4,12 @@
     border: 0;
 }
 
+.showview .list-view {
+    height: calc(100vh - 200px);
+    padding: 0px;
+    text-align: center;
+}
+
 .history-record tr {
     border: 0;
 }

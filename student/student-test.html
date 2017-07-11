@@ -60,11 +60,11 @@
         <div class="showview">
             <div class="head-view">考试中</div>
             <div class="list-view">
-                <div class="qh">
+                <div class="qh" >
                     <h5>单选题
                     <span class="detail">共10题，合计100.0分</span></h5>
                 </div>
-                <dl>
+                <dl id="danxuan">
                     <!-- 题干+分值 -->
                     <dt>
                         <div class="icon-block">
@@ -81,60 +81,65 @@
                         </span>
                     </dt>
                     <!-- A -->
-                    <dd class="answer" >
+                    <dd class="answer">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
-                                <span class='ABCD'>A</span><!-- ABCD -->
-                                <span class="ABCDContent"> 一种 </sapn>
+                                <span class='ABCD'>A</span>
+                            <!-- ABCD -->
+                            <span class="ABCDContent"> 一种 </sapn>
                                 <!-- 选项内容 -->
                             </span>
                         </label>
                     </dd>
-                    <!-- B -->              
-                    <dd class="answer" >
+                    <!-- B -->
+                    <dd class="answer">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
                                 <span class='ABCD'>B</span>
-                                <span class="ABCDContent"> 一种 </sapn>
+                            <span class="ABCDContent"> 一种 </sapn>
                             </span>
                         </label>
                     </dd>
                     <!-- C -->
-                    <dd class="answer" >
+                    <dd class="answer">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
                                 <span class='ABCD'>C</span>
-                                <span class="ABCDContent"> 一种 </sapn>
+                            <span class="ABCDContent"> 一种 </sapn>
                             </span>
                         </label>
                     </dd>
                     <!-- D -->
-                    <dd class="answer" >
+                    <dd class="answer">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
                                 <span class='ABCD'>D</span>
-                                <span class="ABCDContent"> 一种 </sapn>
+                            <span class="ABCDContent"> 一种 </sapn>
                             </span>
                         </label>
                     </dd>
                 </dl>
-               	<dl>
+                <div class="qh">
+                    <h5>多选题
+                    <span class="detail">共10题，合计100.0分</span></h5>
+                </div>
+                <dl  id="duoxuan">
                     <!-- 题干+分值 -->
                     <dt>
                         <div class="icon-block">
@@ -151,65 +156,65 @@
                         </span>
                     </dt>
                     <!-- A -->
-                    <dd class="answer" >
+                    <dd class="answerMuch">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
-                                <span class='ABCD'>A</span><!-- ABCD -->
-                                <span class="ABCDContent"> 一种 </sapn>
+                                <span class='ABCD'>A</span>
+                            <!-- ABCD -->
+                            <span class="ABCDContent"> 一种 </sapn>
                                 <!-- 选项内容 -->
                             </span>
                         </label>
                     </dd>
-                    <!-- B -->              
-                    <dd class="answer" >
+                    <!-- B -->
+                    <dd class="answerMuch">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
                                 <span class='ABCD'>B</span>
-                                <span class="ABCDContent"> 一种 </sapn>
+                            <span class="ABCDContent"> 一种 </sapn>
                             </span>
                         </label>
                     </dd>
                     <!-- C -->
-                    <dd class="answer" >
+                    <dd class="answerMuch">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
                                 <span class='ABCD'>C</span>
-                                <span class="ABCDContent"> 一种 </sapn>
+                            <span class="ABCDContent"> 一种 </sapn>
                             </span>
                         </label>
                     </dd>
                     <!-- D -->
-                    <dd class="answer" >
+                    <dd class="answerMuch">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
                                 <span class='ABCD'>D</span>
-                                <span class="ABCDContent"> 一种 </sapn>
+                            <span class="ABCDContent"> 一种 </sapn>
                             </span>
                         </label>
                     </dd>
                 </dl>
-                
                 <div class="qh">
                     <h5>填空题
                     <span class="detail">共10题，合计100.0分</span></h5>
                 </div>
-                <dl>
+                <dl  id="tiankong">
                     <!-- 题干+分值 -->
                     <dt>
                         <div class="icon-block">
@@ -226,200 +231,45 @@
                         </span>
                     </dt>
                     <!-- A -->
-                    <dd class="answerInput" >
+                    <dd class="answerInput">
                         <input type="radio" name="option1">
                         <span class="radiu">
-                        	<span class="radiuSelect"></span>
+                            <span class="radiuSelect"></span>
                         </span>
                         <label>
                             <span class="words">
-                                <span class='ABCD'></span><!-- ABCD -->
-                                此处填写答案<span class="ABCDContent"><input type="text" style="border:0;border-bottom: 1px solid black" class="input">。</sapn>
+                                <span class='ABCD'></span>
+                            <!-- ABCD -->
+                            此处填写答案<span class="ABCDContent"><input type="text" class="input">。</sapn>
                                 <!-- 选项内容 -->
-                            </span>
-                        </label>
-                    </dd>
-                    
-                </dl>
-               	<dl>
-                    <!-- 题干+分值 -->
-                    <dt>
-                        <div class="icon-block">
-                            <label class="indexLabel">
-                                <span class="index">4</span>
-                                <!-- 试卷中题号 非常重要 ！！！-->
-                                <span class="sqlIndex">id4</span>
-                                <!--  数据库中题号id  非常重要！！！-->
-                            </label>
-                        </div>
-                        <span class="qc">
-                            <span class="score">(5&nbsp;分)<!-- 分值 --></span>
-                        <span class="content"><!-- 题目 -->小明有一个苹果和一个梨子，那么他有几种水果 </span>
-                        </span>
-                    </dt>
-                    <!-- A -->
-                    <dd class="answerInput" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'></span><!-- ABCD -->
-                                此处填写答案<span class="ABCDContent"><input type="text" style="border:0;border-bottom: 1px solid black" class="input">。</sapn>
-                                <!-- 选项内容 -->
-                            </span>
-                        </label>
-                    </dd>
-                    
-                </dl>
-                
-
-                <div class="qh">
-                    <h5>多选题
-                    <span class="detail">共10题，合计100.0分</span></h5>
-                </div>
-                <dl>
-                    <!-- 题干+分值 -->
-                    <dt>
-                        <div class="icon-block">
-                            <label class="indexLabel">
-                                <span class="index">5</span>
-                                <!-- 试卷中题号 非常重要 ！！！-->
-                                <span class="sqlIndex">id5</span>
-                                <!--  数据库中题号id  非常重要！！！-->
-                            </label>
-                        </div>
-                        <span class="qc">
-                            <span class="score">(5&nbsp;分)<!-- 分值 --></span>
-                        <span class="content"><!-- 题目 -->小明有一个苹果和一个梨子，那么他有几种水果 </span>
-                        </span>
-                    </dt>
-                    <!-- A -->
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>A</span><!-- ABCD -->
-                                <span class="ABCDContent"> 一种 </sapn>
-                                <!-- 选项内容 -->
-                            </span>
-                        </label>
-                    </dd>
-                    <!-- B -->              
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>B</span>
-                                <span class="ABCDContent"> 一种 </sapn>
-                            </span>
-                        </label>
-                    </dd>
-                    <!-- C -->
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>C</span>
-                                <span class="ABCDContent"> 一种 </sapn>
-                            </span>
-                        </label>
-                    </dd>
-                    <!-- D -->
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>D</span>
-                                <span class="ABCDContent"> 一种 </sapn>
-                            </span>
-                        </label>
-                    </dd>
-                </dl>
-               	<dl>
-                    <!-- 题干+分值 -->
-                    <dt>
-                        <div class="icon-block">
-                            <label class="indexLabel">
-                                <span class="index">6</span>
-                                <!-- 试卷中题号 非常重要 ！！！-->
-                                <span class="sqlIndex">id6</span>
-                                <!--  数据库中题号id  非常重要！！！-->
-                            </label>
-                        </div>
-                        <span class="qc">
-                            <span class="score">(5&nbsp;分)<!-- 分值 --></span>
-                        <span class="content"><!-- 题目 -->小明有一个苹果和一个梨子，那么他有几种水果 </span>
-                        </span>
-                    </dt>
-                    <!-- A -->
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>A</span><!-- ABCD -->
-                                <span class="ABCDContent"> 一种 </sapn>
-                                <!-- 选项内容 -->
-                            </span>
-                        </label>
-                    </dd>
-                    <!-- B -->              
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>B</span>
-                                <span class="ABCDContent"> 一种 </sapn>
-                            </span>
-                        </label>
-                    </dd>
-                    <!-- C -->
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>C</span>
-                                <span class="ABCDContent"> 一种 </sapn>
-                            </span>
-                        </label>
-                    </dd>
-                    <!-- D -->
-                    <dd class="answerMuch" >
-                        <input type="radio" name="option1">
-                        <span class="radiu">
-                        	<span class="radiuSelect"></span>
-                        </span>
-                        <label>
-                            <span class="words">
-                                <span class='ABCD'>D</span>
-                                <span class="ABCDContent"> 一种 </sapn>
                             </span>
                         </label>
                     </dd>
                 </dl>
             </div>
+            <div class="datikaImg">
+                <!-- 背景图片 -->
+            </div>
+            <div class="datika">
+                <span class='gb'></span>
+                <div class="s">
+                    <h3>单选题</h3>
+                    <div class="div1">                       
+                    </div>
+                </div>
+                <div class="s">
+                    <h3>多选题</h3>
+                    <div class="div2">                       
+                    </div>
+                </div>
+                <div class="s">
+                    <h3>填空题</h3>
+                    <div class="div3">                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="countdown">02:00:00</div>
         </div>
     </div>
     <div class="menu">
@@ -427,44 +277,44 @@
             <div class="menu-top">
                 <div class="pull-left">
                     <span></span>
+                </div>
+                <div class="pull-right">
+                    <span>close</span>
+                    <span class="glyphicon glyphicon-remove"></span>
+                </div>
+            </div>
+            <div class="second-menu">
+                <div class="home">题库<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                <ul class="second-menu-home">
+                    <a href="">
+                        <li>随机试卷</li>
+                    </a>
+                    <a href="">
+                        <li>套题</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="second-menu">
+                <div class="winners">个人中心<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                <ul class="second-menu-winners ">
+                    <a href="">
+                        <li>基本信息</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="second-menu">
+                <div class="history">历史记录<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+                <ul class="second-menu-history ">
+                    <a href="">
+                        <li>考试历史记录</li>
+                    </a>
+                    <a href="">
+                        <li>错题收集</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu-foot"></div>
         </div>
-        <div class="pull-right">
-            <span>close</span>
-            <span class="glyphicon glyphicon-remove"></span>
-        </div>
-    </div>
-    <div class="second-menu">
-        <div class="home">题库<span class="glyphicon glyphicon-menu-hamburger"></span></div>
-        <ul class="second-menu-home">
-            <a href="">
-                <li>随机试卷</li>
-            </a>
-            <a href="">
-                <li>套题</li>
-            </a>
-        </ul>
-    </div>
-    <div class="second-menu">
-        <div class="winners">个人中心<span class="glyphicon glyphicon-menu-hamburger"></span></div>
-        <ul class="second-menu-winners ">
-            <a href="">
-                <li>基本信息</li>
-            </a>
-        </ul>
-    </div>
-    <div class="second-menu">
-        <div class="history">历史记录<span class="glyphicon glyphicon-menu-hamburger"></span></div>
-        <ul class="second-menu-history ">
-            <a href="">
-                <li>考试历史记录</li>
-            </a>
-            <a href="">
-                <li>错题收集</li>
-            </a>
-        </ul>
-    </div>
-    <div class="menu-foot"></div>
-    </div>
     </div>
 </body>
 <script src="js/bootstrap.min.js"></script>
