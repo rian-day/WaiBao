@@ -8,18 +8,6 @@
     padding-bottom: 35px;
     text-align: center;
 }
-
-.touxiang {
-    width: 150px;
-    height: 150px;
-    margin: 10px 10% 0 10%;
-    border: 10px solid rgb(244, 247, 246);
-    border-radius: 50%;
-    -webkit-box-shadow: 1px 1px 1px #f4f7f6;
-    -moz-box-shadow: 1px 1px 1px #f4f7f6;
-    box-shadow: 1px 1px 1px #f4f7f6;
-}
-
 .student-img-edit {
     margin-top: 40px;
     text-align: center;
@@ -46,16 +34,20 @@
 
 .base {
     border-bottom: 1px dashed #CCCCCC;
-    margin-top: 20px;
+    margin-top: 2%;
 }
 .wu{
     border:0;
+}
+.wu button{
+    margin-left: 35%;
 }
 
 .base ul {
     list-style-type: none;
     display: inline-block;
-        line-height: 24px;
+    line-height: 24px;
+    margin-left: -15%;
 }
 
 .base ul li {
@@ -223,11 +215,72 @@ input[type='password']:focus {
 
 .showInfo{
     display: none;
-}
 
+}
+.baseInfo-content{
+    margin-left: 27%;
+}
+.touxiang{
+    width: 20%;
+    height: 300px;
+    float: left;
+}
+.img_show img{
+    border-radius: 50%;
+    width: 65%;
+    height: 65%;
+    margin-left: 15%;
+}
+.upfile{
+
+}
 .baseInfo{
     display: block;
 }
+
+.editInfo-content{
+    margin-left: 27%;
+}
+.pwd{
+    margin-left: 10%;
+}
+.a-upload {
+    padding: 8px 15px;
+    height: 35px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-left: 23%;
+    margin-top: 35px;
+}
+
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    background: #eee;
+    border-color: #ccc;
+    text-decoration: none
+}
+
+
+
 
 .mybutton{
     margin:15px;
