@@ -98,7 +98,7 @@ $(document).ready(function() {
     	});
     });
     $(".second-menu div").click(function() {
-		var tid = $(this).text();
+		var tid = $(this).attr('class');
 		tid = '.second-menu-' + tid + ' li';
 		var theight = $(tid).css('height');
 		if(theight=='70px'){
@@ -259,5 +259,11 @@ $(document).ready(function() {
             $(".box-title3 #behide6").attr('class','keyList behide6');
             $(".box-title3 #behide6 p").text("");
         }
+    });
+    $(".add-fast-access").click(function() {
+        $(".black-out-curtain").css({
+            'opacity': '1',
+            'z-index': '85000'
+        });
     });
 });

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>管理员界面</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/manage.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body class="home">
+<div class="move-right">
+	<div class="header">
+		<div class="box-left">
+			<span class="glyphicon glyphicon-th-list"></span>
+			<span>menu</span>
+		</div>
+		<div class="box-right">
+			<div class="search-info">
+				<span class="glyphicon glyphicon-search"></span>
+				<span>search for inspiration</span>
+			</div>
+			<div class="co-logo"></div>
+			<div class="login-btn">
+				<a class="totop-img" href="javascript:void(0);"><span class="glyphicon glyphicon-collapse-up"></span></a>
+				<a class="login-font" href=""><span>submit your site</span></a>
+			</div>
+			<div class="logo-header">
+				<img src="images/logo.png">
+			</div>
+		</div>
+		<div class="box-right-search">
+			<div class="to-dropdown">
+				<span class="search-type">all</span><span class="glyphicon glyphicon-triangle-bottom"></span>
+				<div class="menu-dropdown">
+                    <ul>
+                        <li><strong><a href="#">ALL</a></strong></li>
+                        <li><strong><a href="#">Websites</a></strong></li>
+                        <li><strong><a href="#">Collections</a></strong></li>
+                        <li><strong><a href="#">Elements</a></strong></li>
+                        <li><strong><a href="#">Magazine</a></strong></li>
+                        <li><strong><a href="#">Jobs</a></strong></li>
+                        <li><strong><a href="#">Users</a></strong></li>
+                    </ul>
+                </div>
+			</div>
+			<input type="text" id="search-text" placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)" data-placeholder="SEARCH FOR INSPIRATION (HTML5, VR, RED, MINIMAL...)" data-placeholder-mobile="SEARCH FOR INSPIRATION" autocomplete="off" class="search-input" value="">
+			<div class="search-goto">
+	            <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
+	        </div>
+	        <div class="box-close">
+			    <span class="glyphicon glyphicon-remove"></span>
+			</div>
+		</div>
+	</div>
+	<div class="overlay-content" style="display: block;"></div>
+
+	<div class="showview">
+		<div class="head-view">发布广播</div>
+		<div class="add-test">
+			
+		</div>
+	</div>
+
+</div>
+<div class="menu">
+	<div class="menu-in">
+		<div class="menu-top">
+			<div class="pull-left">
+				<span>setting</span>
+			</div>
+			<div class="pull-right">
+				<span>close</span>
+				<span class="glyphicon glyphicon-remove"></span>
+			</div>
+		</div>
+		<div class="second-menu">
+			<a href="manage-index.html"><div class="link"><span class="glyphicon glyphicon-home"></span>管理员主页</div></a>
+		</div>
+		<div class="second-menu">
+			<div class="1">用户管理<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			<ul class="second-menu-1">
+				<a href="manage-userlist.html"><li>用户列表</li></a>
+				<a href="manage-adduser.html"><li>添加用户</li></a>
+			</ul>
+		</div>
+		<div class="second-menu">
+			<div class="2">考题管理<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			<ul class="second-menu-2">
+				<a href="manage-subjectlist.html"><li>题目列表</li></a>
+				<a href="manage-addsubject.html"><li>添加题目</li></a>
+			</ul>
+		</div>
+		<div class="second-menu">
+			<div class="3">试卷管理<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			<ul class="second-menu-3">
+				<a href="manage-tplist.html"><li>试卷列表</li></a>
+				<a href="manage-addtp.html"><li>创建试卷</li></a>
+			</ul>
+		</div>
+		<div class="second-menu">
+			<div class="4">后台管理<span class="glyphicon glyphicon-menu-hamburger"></span></div>
+			<ul class="second-menu-4">
+				<a href="manage-bbs.html"><li>信息发布</li></a>
+				<a href="manage-pro.html"><li>职业管理</li></a>
+				<a href="manage-info.html"><li>个人信息管理</li></a>
+			</ul>
+		</div>
+		<div class="menu-foot"></div>
+	</div>
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/manage.js"></script>
+<!-- <script src="./js/jquery.jqpagination.js"></script>
+<script type="text/javascript" src="wangEditor/wangEditor.min.js"></script>
+<script type="text/javascript">
+    var E = window.wangEditor
+
+    var editor1 = new E('#danxuan-timu-1','#danxuan-timu')
+    editor1.create()
+
+    var editor2 = new E('#danxuan-daan1-1','#danxuan-daan1')
+    editor2.create()
+
+    var editor3 = new E('#danxuan-daan2-1','#danxuan-daan2')
+    editor3.create()
+
+    var editor4 = new E('#danxuan-daan3-1','#danxuan-daan3')
+    editor4.create()
+
+    var editor5 = new E('#danxuan-daan4-1','#danxuan-daan4')
+    editor5.create()
+
+    var editor6 = new E('#danxuan-daan5-1','#danxuan-daan5')
+    editor6.create()
+
+    var editor7 = new E('#danxuan-daan6-1','#danxuan-daan6')
+    editor7.create()
+
+    var editor8 = new E('#danxuan-jiexi-1','#danxuan-jiexi')
+    editor8.create()
+
+
+    var editor9 = new E('#duoxuan-timu-1','#duoxuan-timu')
+    editor9.create()
+
+    var editor10 = new E('#duoxuan-daan1-1','#duoxuan-daan1')
+    editor10.create()
+
+    var editor11 = new E('#duoxuan-daan2-1','#duoxuan-daan2')
+    editor11.create()
+
+    var editor12 = new E('#duoxuan-daan3-1','#duoxuan-daan3')
+    editor12.create()
+
+    var editor13 = new E('#duoxuan-daan4-1','#duoxuan-daan4')
+    editor13.create()
+
+    var editor14 = new E('#duoxuan-daan5-1','#duoxuan-daan5')
+    editor14.create()
+
+    var editor15 = new E('#duoxuan-daan6-1','#duoxuan-daan6')
+    editor15.create()
+
+    var editor16 = new E('#duoxuan-jiexi-1','#duoxuan-jiexi')
+    editor16.create()
+
+
+
+    var editor17 = new E('#tiankong-timu-1','#tiankong-timu')
+    editor17.create()
+
+    var editor18 = new E('#tiankong-daan1-1','#tiankong-daan1')
+    editor18.create()
+
+    var editor19 = new E('#tiankong-daan2-1','#tiankong-daan2')
+    editor19.create()
+
+    var editor20 = new E('#tiankong-daan3-1','#tiankong-daan3')
+    editor20.create()
+
+    var editor21 = new E('#tiankong-daan4-1','#tiankong-daan4')
+    editor21.create()
+
+    var editor22 = new E('#tiankong-daan5-1','#tiankong-daan5')
+    editor22.create()
+
+    var editor23 = new E('#tiankong-daan6-1','#tiankong-daan6')
+    editor23.create()
+
+    var editor24 = new E('#tiankong-jiexi-1','#tiankong-jiexi')
+    editor24.create()
+
+
+    var editor25 = new E('#panduan-timu-1','#panduan-timu')
+    editor25.create()
+
+    var editor26 = new E('#panduan-jiexi-1','#panduan-jiexi')
+    editor26.create()
+
+
+    var editor27 = new E('#kaifang-timu-1','#kaifang-timu')
+    editor27.create()
+
+    var editor28 = new E('#kaifang-daan1-1','#kaifang-daan1')
+    editor28.create()
+
+    var editor29 = new E('#kaifang-jiexi-1','#kaifang-jiexi')
+    editor29.create()
+</script> -->
+</body>
+</html>
