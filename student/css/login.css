@@ -301,7 +301,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-header h2 {
   font-weight: 300;
   font-size: 22px;
-  line-height: 1.5;
   margin-bottom: 30px;
 }
 #gtco-header .form-wrap {
@@ -1301,7 +1300,7 @@ a {color: #79b6e4;text-decoration: none;}
 }
 /*inputs*/
 
-#msform input, #msform textarea {
+#msform input, #msform textarea ,#sex{
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -1354,6 +1353,7 @@ a {color: #79b6e4;text-decoration: none;}
     font-size: 18px;
     color: #666;
     margin-bottom: 20px;
+    line-height: 24px;
 }
 /*progressbar*/
 #progressbar {
@@ -1405,16 +1405,19 @@ a {color: #79b6e4;text-decoration: none;}
     background: #27AE60;
     color: white;
 }
-.prompt1,.prompt2,.prompt3{
-    color: #a94442;
+.prompt1,.prompt2{
     font-size: 13px;
     margin-bottom: 10px;
-    font-family: "Times New Roman",Georgia,Serif;
-    background-color: #f2dede;
+    margin-top: -5px;
     border-radius: 4px;
     font-size: 18px;
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
+    color: red;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: justify;
+    padding-left: 10px;
+    height: 20px;
 }
 #footer{
     height: 350px;
@@ -1476,7 +1479,7 @@ a {color: #79b6e4;text-decoration: none;}
     font-weight: bold;
 }
 .lables3{
-    margin-left:-45%;
+    margin-left:-47%;
     margin-bottom: 2%;
     color: #666;
     font-weight: bold;

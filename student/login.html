@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <html>
 	<head>
 	<meta charset="utf-8">
@@ -58,7 +58,8 @@
 
 						<div class="loginul">
 							<div class="login-title">LOGIN</div>
-
+							
+							<div style="margin-left: 10%;padding:5px;color: red;font-size: 12px;height: 24px" class="loginalert"></div>
 							<div class="checkbox checkbox-success">
 		                        <input type="radio" name="radio4" id="radio8" checked="checked">
 		                        <label for="radio8">
@@ -85,7 +86,7 @@
 									<input type="text" name="Email" class="Passwords">
 								</div>
 								<div class="denglu">
-									<input type="submit" value="LOGIN" class="btn btn-primary">
+									<input type="submit" value="LOGIN" class="btn btn-primary" id="loginSubmit">
 									<div class="tosign">
 									还没有账号？
 										<a href="javascript:void(0);" class="sss">立即加入</a>
@@ -111,17 +112,21 @@
             <!-- fieldsets -->
             <fieldset>
                 <h2 class="fs-title">基本信息</h2>
-                <h3 class="fs-subtitle">This is step 1</h3>
-                <div class="lables1">Email</div>
-                <input type="text" name="email" placeholder="邮箱" class="Email"  />
-                <div class="prompt1"></div>
+                <div class="fs-subtitle prompt1"></div>
+                <div class="lables1">Name</div>
+                <input type="text" name="name" placeholder="姓名" class="name" />
                 <div class="lables2">Password</div>
                 <input type="password" name="pass" placeholder="密码" class="pass" />
-                <div class="prompt2"></div>
                 <div class="lables3">Confirm Password</div>
                 <input type="password" name="cpass" placeholder="密码验证" class="cpass" />
-                <div class="prompt3"></div>
+                <div class="lables1" style="margin-left: -86%;">Sex</div>
+                <select name="" id="sex">
+                	<option value="男">男</option>
+                	<option value="女">女</option>
+                </select>
+                <br>
                 <input type="button" name="next" class="next1 action-button1" value="Next" id="s1" />
+
                 <div class="tosign2">
 										<a href="javascript:void(0);" class="qqq">返回登陆</a>
 									</div>
@@ -130,9 +135,9 @@
                 <h2 class="fs-title">选择职业</h2>
                 <h3 class="fs-subtitle">Choosing a career</h3>
                 <select id="myselect">
-                    <option value="1">web工程师</option>
-                    <option value="2">java工程师</option>
-                </select>
+                    <option value="web工程师">web工程师</option>
+                    <option value="java工程师">java工程师</option>
+                </select>				
                 <br>
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
                 <input type="button" name="next" class="next action-button" value="Next" />
@@ -140,15 +145,17 @@
             <fieldset>
                 <h2 class="fs-title">邮箱验证</h2>
                 <h3 class="fs-subtitle">Mailbox validation</h3>
-                <input type="text" name="fname" placeholder="First Name" class="Email1" disabled="true" />
-                <input type="text" name="yanzheng"  size="30" style="width: 50%;" placeholder="请输入验证码">
+                <div class="fs-subtitle prompt2" style="margin-bottom: 10px;"></div>
+                <div class="lables1">Email</div>
+                <input type="text" name="email" placeholder="邮箱" class="Email"  />
+                <input type="text" name="yanzheng"  size="30" style="width: 50%;" placeholder="请输入验证码" class="yzm">
 
 
-                <input type="button" name="yanzheng1" class="btn btn-info" value="发送验证码" style="width: 40%;background:rgb(39,174,96);margin-top: 5px;height: 37px;border-radius: 4px;color: white" 
+                <input type="button" name="yanzheng1" class="btn btn-info" value="发送验证码" style="width: 40%;background:rgb(39,174,96);margin-top: 10px;line-height: 20px;border-radius: 4px;color: white" 
                      onclick="settime(this)"/>
-
+				
                 <input type="button" name="previous" class="previous action-button" value="Previous" />
-                <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                <input type="submit" name="submit" class="submit action-button" value="Submit" id="regSubmit" />
             </fieldset>
         </form>
     </div>
