@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>管理员界面</title>
+    <title>个人中心</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -69,12 +69,9 @@
                 </ul>
                 <div class="baseInfo showInfo">
                     <div class="touxiang">
-
-<div class="img_show img_show1">
-  <img src="images/moren.png" width="103" height="103" alt="">
-
-</div>
- 
+                        <div class="img_show img_show1">
+                            <img src="images/moren.png" width="103" height="103" alt="">
+                        </div>
                     </div>
                     <div class="baseInfo-content">
                         <div class="base">
@@ -118,17 +115,19 @@
                             </ul>
                         </div>
                     </div>
-                     </div>
-                    <div class="editInfo showInfo">
-                        <div class="touxiang">
-                            <div class="img_show img_show1">
-                              <img src="images/moren.png" width="103" height="103" alt="">
-                              <a href="javascript:;" class="a-upload">
-                              <input type="file" class="upfile" accept="*/*">点击上传头像
-                              </a>
+                </div>
+                <div class="editInfo showInfo">
+                    <div class="touxiang" >
+                        <div class="img_show img_show1" >
+                            <div>
+                                <img src="images/moren.png" width="103" height="103" alt="" >
                             </div>
+                            <a href="javascript:;" class="a-upload" >
+                                <input type="file" class="upfile" accept="*/*">点击上传头像
+                            </a>
                         </div>
-                        <div class="editInfo-content">
+                    </div>
+                    <div class="editInfo-content">
                         <div class="base">
                             <ul>
                                 <li>
@@ -136,7 +135,8 @@
                                 </li>
                                 <li>
                                     <div class="name">
-                                        <input type="text">
+                                        <input type="text" style="float: left;">
+                                        <div class="ccc"></div>
                                     </div>
                                 </li>
                             </ul>
@@ -182,53 +182,62 @@
                             </ul>
                         </div>
                         <div class="base wu">
-                            <ul><li></li>
+                            <ul>
+                                <li></li>
                                 <li>
-                                     <button type="button" class="button green">确定修改</button>
+                                    <button type="button" class="button green baseButton">确定修改</button>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                </div>
+                <div class="pwd showInfo">
+                    <div class="base">
+                        <ul>
+                            <li>
+                                <p>旧密码:</p>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="text" class="oldPwd" placeholder="请输入旧密码">
+                                    <div class="oldPwdSpan"></div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="pwd showInfo">
-                        <div class="base">
-                            <ul>
-                                <li>
-                                    <p>旧密码:</p>
-                                </li>
-                                <li>
-                                    <div><input type="text" class="oldPwd"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="base">
-                            <ul>
-                                <li>
-                                    <p>新密码:</p>
-                                </li>
-                                 <li>
-                                    <div><input type="text" class="oldPwd"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="base">
-                            <ul>
-                                <li>
-                                    <p>确定新密码:</p>
-                                </li>
-                                <li>
-                                    <div><input type="text" class="newPwd"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="base wu">
-                            <ul><li></li>
-                                <li>
-                                     <button type="button" class="button green">确定修改</button>
-                                </li>
-                            </ul>
-                        </div>
-
+                    <div class="base">
+                        <ul>
+                            <li>
+                                <p>新密码:</p>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="text" class="oldPwd newPwd1" placeholder="密码长度大于6">
+                                    <div class="newPwdSpan"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="base">
+                        <ul>
+                            <li>
+                                <p>确定新密码:</p>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="text" class="newPwd newPwd2" placeholder="密码长度大于6">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="base wu">
+                        <ul>
+                            <li></li>
+                            <li>
+                                <button type="button" class="button green pwdButton">确定修改</button>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

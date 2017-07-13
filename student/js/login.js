@@ -125,7 +125,7 @@ $(document).ready(function() {
     })
 
 
-    var alertTxt = new Array("账号不能为空", "邮箱格式不正确", "密码不能为空", "账号或者密码错误", "密码至少含有8个字符", "两次密码输入不一致", "", "邮箱不能为空", "姓名不能为空", "验证码不能为空");
+    var alertTxt = new Array("账号不能为空", "邮箱格式不正确", "密码不能为空", "账号或者密码错误", "密码至少含有6个字符", "两次密码输入不一致", "", "邮箱不能为空", "姓名不能为空", "验证码不能为空");
     var table, email, password;
     //获取input
     $("#s1").click(function() {
@@ -139,7 +139,7 @@ $(document).ready(function() {
             i = 8;
         } else if ($(".pass").val().length == 0) {
             i = 2;
-        } else if ($(".pass").val().length < 8) {
+        } else if ($(".pass").val().length < 6) {
             i = 4;
         } else if ($(".pass").val() != $(".cpass").val()) {
             i = 5;

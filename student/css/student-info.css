@@ -63,6 +63,9 @@
     line-height: 24px;
     margin-left: 50px;
 }
+.base ul li div input{
+    float: left;
+}
 .base ul li p {
     font-size: 18px;
     display: inline-block;
@@ -317,4 +320,22 @@ input[type='password']:focus {
     position: relative;
     overflow: hidden;
 
+}
+
+.oldPwdSpan{
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.newPwdSpan,.ccc{
+    float: right;
+    font-size: 12px !important;
+    color: red !important;
+    padding-top: 5px;
+}
+
+.oldPwd,.newPwd1,.newPwd2{
+    font-size: 13px;
 }
