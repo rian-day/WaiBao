@@ -5,6 +5,8 @@
 	<title>管理员界面</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/manage.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/111.css">
 	<script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body class="home">
@@ -56,6 +58,7 @@
     <div class="showview">         
     	<div class="head-view">职业管理</div>
 		<div class="manage-pro">
+		<div class="box1">
 			<div class="pro-title1">
 				<div class="pro-name">职业</div>
 				<div class="pro-revise">修改</div>
@@ -63,39 +66,38 @@
 			<div class="pro-title2">
 				<div class="pro-name">
 					<ul>
-						<li>职业1</li>
-						<li>职业2</li>
-						<li>职业3</li>
+						<li>java工程师</li>
+						<li>web工程师</li>
+						<li>默认职业</li>
 					</ul>
 				</div>
 				<div class="pro-revise">
 					<ul>
 						<li>
-							<form action="">
-			      				<input type="text" name="">
-			      				<input type="submit" value="确认更改">
-			      			</form>
+							
+			      				<input type="text" name="" class="zhiye" value="java工程师" >
+			      				<input type="submit" value="确认更改" class="btn btn-info prdemo">
+			      			
 			      		</li>
 						<li>
-							<form action="">
-								<input type="text" name="">
-								<input type="submit" value="确认更改">
-							</form>
+							
+								<input type="text" name="" class="zhiye" value="web工程师">
+								<input type="submit" value="确认更改" class="btn btn-info prdemo">
+							
 						</li>
 						<li>
-							<form action="">
-			      				<input type="text" name="">
-			      				<input type="submit" value="确认更改">
-			      			</form>
+							
+			      				<input type="text" name="" class="zhiye">
+			      				<input type="submit" value="确认更改" class="btn btn-info prdemo">
+			      			
 						</li>
 					</ul>
 				</div>
 				<div class="add-pro">
-					<form action="">
-	      				<input type="text" name="">
-	      				<input type="submit" value="添加新职业">
-	      			</form>
+	      				<input type="button" value="添加新职业" class="btn btn-success">
+	      				<input type="submit" class="btn btn-success submitdemo" value="提交" id="submit">
 				</div>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -150,5 +152,6 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/manage.js"></script>
+<script src="js/111.js"></script>
 </body>
 </html>

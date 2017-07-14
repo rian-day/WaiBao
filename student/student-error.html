@@ -6,8 +6,7 @@
     <title>历史记录界面</title>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
-    <link rel="stylesheet" type="text/css" href="css/student-history.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.page.css">
+    <link rel="stylesheet" type="text/css" href="css/student-error.css">
     <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
@@ -57,41 +56,22 @@
             </div>
         </div>
         <div class="overlay-content" style="display: block;"></div>
-        <div class="showview">
-            <div class="head-view">考试记录</div>
-            <div class="list-view">
-                <ul class="history-ul">
-                    <li class="history-li">
-                        <div class="history-text">
-                            <p>web基础练习</p>
-                             <span class="timelong"><span >考试时长：</span>2017-05-04 08:00</span>
-                            <span class="timelong"><span >试卷总分：</span>100分</span>
-                            <span class="timelong"><span >完成情况：</span>未完成</span>
-                        </div>
-                        <div class="history-bottom">
-                            <span class="grade">98分</span>
-                            <span class="chakan"><a href="student-history-test.html">查看</a></span>
-                        </div>
-                    </li>
-                    <li class="history-li">
-                        <div class="history-text">
-                            <p>web基础练习</p>
-                             <span class="timelong"><span >考试时长：</span>2017-05-04 08:00</span>
-                            <span class="timelong"><span >试卷总分：</span>100分</span>
-                            <span class="timelong"><span >完成情况：</span>未完成</span>
-                        </div>
-                        <div class="history-bottom">
-                            <span class="grade">98分</span>
-                            <span class="chakan"><a href="student-history-test.html">查看</a></span>
-                        </div>
-                    </li>
-                    
-                    
-                    
-                
-                </ul>
-                <br>
-                <div id="page"></div>
+        <div class="showview-error">
+            <div class="head-view">错题集</div>
+            <div class="list-timu">
+                <div class="timu-list">
+                    <div class="timu-list-title">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                </div>
+                <div class="timu-fenxi">
+                    <div class="fenxitimu"></div>
+                    <div class="fenxi"></div>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
@@ -142,19 +122,7 @@
 </body>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/manage.js"></script>
-<script src="./js/jquery.jqpagination.js"></script>
-<script type="text/javascript" src="js/student-history.js"></script>
-<script type="text/javascript" src="js/jquery.page.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $("#page").Page({
-          totalPages: 9,//分页总数
-          liNums: 7,//分页的数字按钮数(建议取奇数)
-          activeClass: 'activP', //active 类样式定义
-          callBack : function(page){
-          //console.log(page)
-          }
-      });
-    })
-</script>
+<script src="js/student-error.js"></script>
+
+
 </html>
