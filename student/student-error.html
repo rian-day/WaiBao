@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/student-error.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.page.css">
     <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
@@ -61,15 +62,62 @@
             <div class="list-timu">
                 <div class="timu-list">
                     <div class="timu-list-title">
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
-                        <a href=""></a>
+                        <a href="" class="timu-list-titl-left">单选题</a>
+                        <a href="" class="timu-list-titl-in">多选题</a>
+                        <a href="" class="timu-list-titl-in">判断题</a>
+                        <a href="" class="timu-list-titl-in">填空题</a>
+                        <a href="" class="timu-list-titl-right">简答题</a>
+                       
+                    </div>
+
+                    <div class="timu-list-containt">
+                        <div class="error-title">
+                            <span class="font-style">我的错题集</span>
+                            <span class="choose-problem">
+                                <span class="down"></span>
+                                <span class="choose-value" data-index="1">职业</span>
+                                <ul class="choose-list">
+                                    <li class="choose-item" data-index="1">全部</li>
+                                    <li class="choose-item" data-index="2">java工程师</li>
+                                    <li class="choose-item" data-index="3">web工程师</li>
+                                    
+                                </ul>
+                            </span>
+                        </div>
+                        <div class="error-contain">
+                            <ul>
+                                <li><i>1</i><span>错题一</span><span class="laji"></span></li>
+                            </ul>
+                        </div>
+                        <div id="page"></div>
                     </div>
                 </div>
                 <div class="timu-fenxi">
-                    <div class="fenxitimu"></div>
-                    <div class="fenxi"></div>
+                    <div class="fenxitimu">
+                        <h3>题目信息:</h3>
+                        <h4>单选题</h4><br>
+                        <div class="danxuan">
+                            <div class="timus">题目:</div>
+                            <div class="timus-content"></div>
+                        </div>
+                        <div class="fenxikuai">
+                        <div class="biaoti">
+                            <div class="fenxikuai-a1">正确答案</div>
+                            <div class="fenxikuai-a3">答案分析</div>
+                        </div>
+                        <div>
+                            <div class="fenxikuai-a2"></div>
+                            <div class="fenxikuai-a4"></div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="fenxi">
+                        <h3>答题信息:</h3>
+                        <div class="fenxi-a1">我的答案</div>
+                        <div class="fenxi-a2"></div>
+                        <div class="fenxi-a4">我的分析</div>
+                        <div class="fenxi-a3"></div>
+                    </div>
                 </div>
                 <div class="clear"></div>
             </div>
@@ -89,10 +137,10 @@
             <div class="second-menu">
                 <div class="home">题库<span class="glyphicon glyphicon-menu-hamburger"></span></div>
                 <ul class="second-menu-home">
-                    <a href="">
+                    <a href="student-random-test.html">
                         <li>随机试卷</li>
                     </a>
-                    <a href="">
+                    <a href="student-alltest.html">
                         <li>套题</li>
                     </a>
                 </ul>
@@ -100,7 +148,7 @@
             <div class="second-menu">
                 <div class="winners">个人中心<span class="glyphicon glyphicon-menu-hamburger"></span></div>
                 <ul class="second-menu-winners ">
-                    <a href="">
+                    <a href="student-info.html">
                         <li>基本信息</li>
                     </a>
                 </ul>
@@ -108,10 +156,10 @@
             <div class="second-menu">
                 <div class="history">历史记录<span class="glyphicon glyphicon-menu-hamburger"></span></div>
                 <ul class="second-menu-history ">
-                    <a href="">
+                    <a href="student-history.html">
                         <li>考试历史记录</li>
                     </a>
-                    <a href="">
+                    <a href="student-error.html">
                         <li>错题收集</li>
                     </a>
                 </ul>
@@ -123,6 +171,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/manage.js"></script>
 <script src="js/student-error.js"></script>
-
+<script type="text/javascript" src="js/jquery.page.js"></script>
 
 </html>
