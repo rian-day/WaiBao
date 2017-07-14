@@ -193,3 +193,36 @@ $(".baseButton").click(function(){
     }
     $(".ccc").html(words);
 })
+
+
+//图片修改
+
+ $("#upload").on('click', function() {  
+        $('#fileToUpload').click();  
+    }); 
+ $('#fileToUpload').on('change', function() {  
+    alert(1);
+        $.ajaxFileUpload({  
+            url:'',  
+            secureuri:false,  
+            fileElementId:'fileToUpload',//file标签的id  
+            dataType: 'json',//返回数据的类型  
+            data:{name:'logan'},//一同上传的数据  
+            success: function (data, status) {  
+                //把图片替换  
+                var obj = jQuery.parseJSON(data);  
+                $("#upload").attr("src", "../image/"+obj.fileName);  
+      
+                if(typeof(data.error) != 'undefined') {  
+                    if(data.error != '') {  
+                        alert(data.error);  
+                    } else {  
+                        alert(data.msg);  
+                    }  
+                }  
+            },  
+            error: function (data, status, e) {  
+                alert(e);  
+            }  
+        });  
+    });  
