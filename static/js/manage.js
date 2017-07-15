@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    var timuindex = 0;
 	$(window).bind("scroll", function () {  
         var sTop = $(window).scrollTop();  
         var sTop = parseInt(sTop);  
@@ -265,5 +266,76 @@ $(document).ready(function() {
             'opacity': '1',
             'z-index': '85000'
         });
+    });
+
+    /*$(".filter").change(function(){
+        $.ajax({
+            type: "GET",
+            url: "test.json",
+            data: {username:$("#username").val(), content:$("#content").val()},
+            dataType: "json",
+            success: function(data){
+                $('#resText').empty();   //清空resText里面的所有内容
+                var html = ''; 
+                $.each(data, function(commentIndex, comment){
+                    html += '<div class="comment"><h6>' + comment['username']
+                            ':</h6><p class="para"' + comment['content']
+                            + '</p></div>';
+                });
+                $('#resText').html(html);
+            }
+        });
+    });*/
+    $(document).on("click",".select-timu",function(){
+        $(".add-timu-black").css({
+            'z-index': '85000',
+            'opacity': '1'
+        });
+        timuindex = $(this).parent().parent().index();
+    });
+    $(document).on("click",".insert-timu",function(){
+        $(".insert-timu-black").css({
+            'z-index': '85000',
+            'opacity': '1'
+        });
+    });
+    $(document).on("click",".add-button",function(){
+        var thetext = $(this).parent().parent().find("td:eq(1)").text();
+        $("#handle-1").find('li:eq('+timuindex+')').find('div:eq(1)').text(thetext);
+        $(".add-timu-black").css({
+            'z-index': '-1',
+            'opacity': '0'
+        });
+    });
+    /*$(".select-timu").click(function() {
+        $(".add-timu-black").css({
+            'z-index': '85000',
+            'opacity': '1'
+        });
+    });
+    $(".insert-timu").click(function() {
+        $(".insert-timu-black").css({
+            'z-index': '85000',
+            'opacity': '1'
+        });
+    });*/
+    $(".add-timu-black .glyphicon-remove").click(function() {
+        $(".add-timu-black").css({
+            'z-index': '-1',
+            'opacity': '0'
+        });
+    });
+    $(".insert-timu-black .add-title > .glyphicon").click(function() {
+        $(".insert-timu-black").css({
+            'z-index': '-1',
+            'opacity': '0'
+        });
+        $(".w-e-text p").text('');
+    });
+    $(".add-pro").click(function() {
+        $('<li><div class="drag-handle">&#9776;</div><div class="handle-timu"></div><div class="timu-info">题目分值：<input type="text">分<br>题目类型：<select class="title-select" name="">  <option class="title1" value="1">单选</option> <option class="title2" value="2">多选</option> <option class="title3" value="3">填空</option> <option class="title4" value="4">判断</option> <option class="title5" value="5">开放题</option> </select><br><div class="select-timu">选择题目</div><div class="insert-timu">录入题目</div><span class="glyphicon glyphicon-remove" title="删除题目"></span></div></li>').insertBefore(this);
+    });
+    $(document).on("click",".timu-info .glyphicon",function(){
+        $(this).parent().parent().remove();
     });
 });
