@@ -40,6 +40,7 @@ $(function() {
     var value = "";
     $(".cuotibutton").click(function(){
     	var obj = $(this).children("button");
+    	alert(obj.attr("class"));
     	if("btn btn-success edit" == obj.attr("class")){
     		value = $(".analyse").text();
     		$(this).html(str2+"&nbsp;"+str1);
