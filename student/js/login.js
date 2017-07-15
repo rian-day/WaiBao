@@ -32,7 +32,23 @@ $(document).ready(function() {
         $("#signup").css("-webkit-animation-duration", "2s");
         $("#signup").css("-webkit-animation-iteration-count", "0");
         $("#signup").css("-webkit-animation-delay", "1s");
+
     });
+    $(".ss").click(function(){
+        $(".loginul").css("display", "none");
+        $("#signup").css("display", "block");
+        $("#signup").css("-webkit-animation-name", "fadeIn");
+        $("#signup").css("-webkit-animation-duration", "2s");
+        $("#signup").css("-webkit-animation-iteration-count", "0");
+        $("#signup").css("-webkit-animation-delay", "1s");
+        if ($(this).text() == "注册") {
+            $(this).children("span").text("登录");
+            $(this).attr("href","javascript:void(0)");
+        }else{
+            $(this).children("span").text("注册");
+            $(this).attr("href","login.html");
+        }
+    })
     $(".qqq").click(function() {
         $(".loginul").css("display", "block");
         $("#signup").css("display", "none");
@@ -215,7 +231,7 @@ $(document).ready(function() {
         alert(sex);
         if (yzm == "" || yzm == null) {
             $(".prompt2").html(alertTxt[9]);
-        }else{}
+        }else{
 	        args = {
 	        	"username" : mail,
 	        	"password":pass,
@@ -232,7 +248,14 @@ $(document).ready(function() {
 
     })
 
-    //
+    //职业读取
+    window.onload=function(){
+        var url = "";
+
+        $.post(url,"",function(data){
+            
+        })
+    }
 
 
 

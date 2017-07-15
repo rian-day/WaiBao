@@ -8,47 +8,47 @@ $(document).ready(function () {
     var filter2 = /^([a-zA-Z0-9_\.\-])+\@([0-9])+$/;
     var filter3 = /^([a-zA-Z0-9_\.\-@])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     //填写账号
-    $("input[name=account]").blur(function () {
-        account = "";
-        if ($(this).val() == "") {
-            $("#account_check").text("请输入登录账号");
-            success=1;
-        } else {
-    	    if(domain){   
-                if(filter1.test($(this).val())||filter2.test($(this).val())){
-                    //独立入口
-                    account=$(this).val()
-                } else {
-                    account = $(this).val() + "@" + domain;
-                }
-            } else {
-                    //公共入口
-                if(filter1.test($(this).val())||filter2.test($(this).val())||(/^1(3|4|5|7|8)\d{9}$/.test($(this).val()))){
-                    $("#account_check").text("")
-                    account = $(this).val()
-                } else {
-                    success=1;
-                    $("#account_check").text("账号不存在")
-                }
-            }
-            $.ajax({
-                type: "GET",
-                cache: false,
-                headers: { "cache-control": "no-cache" },
-                dataType: "text",
-                url: "/account/check_account_exist?account=" + account,
-                success: function (msg) {
-                    if (msg == "0") {
-                        success=1;
-                        $("#account_check").text("账号不存在");
-                    } else {
-                        $("#account_check").text("");
-                        account_ok = true;
-                    };
-                }
-            });
-        };
-    })
+    // $("input[name=account]").blur(function () {
+    //     account = "";
+    //     if ($(this).val() == "") {
+    //         $("#account_check").text("请输入登录账号");
+    //         success=1;
+    //     } else {
+    // 	    if(domain){   
+    //             if(filter1.test($(this).val())||filter2.test($(this).val())){
+    //                 //独立入口
+    //                 account=$(this).val()
+    //             } else {
+    //                 account = $(this).val() + "@" + domain;
+    //             }
+    //         } else {
+    //                 //公共入口
+    //             if(filter1.test($(this).val())||filter2.test($(this).val())||(/^1(3|4|5|7|8)\d{9}$/.test($(this).val()))){
+    //                 $("#account_check").text("")
+    //                 account = $(this).val()
+    //             } else {
+    //                 success=1;
+    //                 $("#account_check").text("账号不存在")
+    //             }
+    //         }
+    //         $.ajax({
+    //             type: "GET",
+    //             cache: false,
+    //             headers: { "cache-control": "no-cache" },
+    //             dataType: "text",
+    //             url: "/account/check_account_exist?account=" + account,
+    //             success: function (msg) {
+    //                 if (msg == "0") {
+    //                     success=1;
+    //                     $("#account_check").text("账号不存在");
+    //                 } else {
+    //                     $("#account_check").text("");
+    //                     account_ok = true;
+    //                 };
+    //             }
+    //         });
+    //     };
+    // })
 
     //填写手机号
     $("input[name=phone]").blur(function () {
@@ -153,15 +153,50 @@ $(document).ready(function () {
         }
     });
 
-
-    $(".btn").click(function() {
-
-        if (success=="") {
-            $(".find_pwd_box").css("display","none");
-            $(".find_pwd_box2").css("display","block");
+    var mail = "";
+    $(".yanzheng").click(function() {
+        mail = $(".form-control").val();
+        if(mail == "" || mail == null){
+            $("#account_check").html("邮箱不能为空");
+        }else if(!(mail).match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/))
+            $("#account_check").html("邮箱格式不正确");
+        else{
+            var url = "";
+            var args = {
+                "mail":mail
+            }
+            $.post(url,args,function(data){
+                if(data == "0"){//不能找到该用户
+                    $("#account_check").html("该邮箱不存在");
+                }else{
+                    //找到该用户
+                    $("#account_check").html("验证码已经发送，请注意查收");
+                    //一分钟倒计时
+                    countDown();
+                }
+            })
         }
+        // if (success=="") {
+        //     $(".find_pwd_box").css("display","none");
+        //     $(".find_pwd_box2").css("display","block");
+        // }
     });
 
-
+    var countdowm = 60;
+    function countDown(){
+        if (countdown == 0) {
+            $(".yanzheng").attr("disabled", "");
+            $(".yanzheng").value = "重新发送";
+            countdown = 60;
+            return;
+        } else {
+            $(".yanzheng").attr("disabled", "true");
+            $(".yanzheng").attr("value","重新发送(" + countdown + ")");
+            countdown--;
+        }
+        setTimeout(function() {
+            countDown()
+        }, 1000)
+    }
 
 })

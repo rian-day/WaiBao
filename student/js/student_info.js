@@ -226,3 +226,15 @@ $(".baseButton").click(function(){
             }  
         });  
     });  
+
+ window.onload=function(){
+    var studentuId = $(".spanhide").text();
+    var url = "";
+    var args = {
+        //学生的id
+        "id":studentuId
+    }
+    $.post(url,args,function(data){
+        
+    })
+}

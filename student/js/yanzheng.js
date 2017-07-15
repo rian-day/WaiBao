@@ -1,7 +1,3 @@
-
-
-
-
 var countdown = 60;
 
 function settime(obj) {
@@ -36,3 +32,7 @@ function settime(obj) {
 	}
 	$(".prompt2").html(al);
 }
+
+
+
+

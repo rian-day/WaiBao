@@ -74,8 +74,10 @@
                             <span class="score">(0&nbsp;分)<!-- 分值 --></span>
                         <span class="content"><!-- 题目 -->小明有一个苹果和一个梨子，那么他有几种水果 </span>
                         </span>
-                        <span class="collect" id="collect"><!-- 是否收藏此题 --></span>
-                        <label class="star" ><!--  -->取消收藏</label>
+                        <span class="sqlIndex"><!--  数据库中题号id --></span>
+                               
+                        <span class="collect" name="collect"><!-- 是否收藏此题 --></span>
+                        <label class="star" ><!--  取消收藏--></label>
                     </dt>
                     <dd class="answer">
                         <input type="radio" name="option1">
@@ -129,15 +131,18 @@
                         <div class="icon-block">
                             <label class="indexLabel">
                                 <span class="index">2</span><!-- 试卷中题号 -->
-                                <span class="sqlIndex">id</span>
-                               <!--  数据库中题号id -->
+                                
                             </label>
                         </div>
                         <span class="qc">
                             <span class="score">(0&nbsp;分)<!-- 分值 --></span>
                         <span class="content"><!-- 题目 -->小明有一个苹果和一个梨子，那么他有几种水果 </span>
                         </span>
-                        <span class="collect"><!-- 是否收藏此题 --></span>
+                         <span class="sqlIndex">id</span>
+                               <!--  数据库中题号id -->
+                        <span class="collect" name="collect"><!-- 是否收藏此题 --></span>
+                        <label class="star" ><!--  取消收藏--></label>
+
                     </dt>
                     <!-- A -->
                     <dd class="answer">
@@ -209,10 +214,10 @@
             <div class="second-menu">
                 <div class="home">题库<span class="glyphicon glyphicon-menu-hamburger"></span></div>
                 <ul class="second-menu-home">
-                    <a href="">
+                    <a href="student-random-test.html">
                         <li>随机试卷</li>
                     </a>
-                    <a href="">
+                    <a href="student-alltest.html">
                         <li>套题</li>
                     </a>
                 </ul>
@@ -220,7 +225,7 @@
             <div class="second-menu">
                 <div class="winners">个人中心<span class="glyphicon glyphicon-menu-hamburger"></span></div>
                 <ul class="second-menu-winners ">
-                    <a href="">
+                    <a href="student-info.html">
                         <li>基本信息</li>
                     </a>
                 </ul>
@@ -228,10 +233,10 @@
             <div class="second-menu">
                 <div class="history">历史记录<span class="glyphicon glyphicon-menu-hamburger"></span></div>
                 <ul class="second-menu-history ">
-                    <a href="">
+                    <a href="student-history.html">
                         <li>考试历史记录</li>
                     </a>
-                    <a href="">
+                    <a href="student-error.html">
                         <li>错题收集</li>
                     </a>
                 </ul>
