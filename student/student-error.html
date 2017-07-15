@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>历史记录界面</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.page.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/student-error.css">
-    <link rel="stylesheet" type="text/css" href="css/jquery.page.css">
     <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 
@@ -61,17 +61,27 @@
             <div class="head-view">错题集</div>
             <div class="list-timu">
                 <div class="timu-list">
-                    <div class="timu-list-title">
+                    <!--  <div class="timu-list-title">
                         <a href="" class="timu-list-titl-left">单选题</a>
                         <a href="" class="timu-list-titl-in">多选题</a>
                         <a href="" class="timu-list-titl-in">判断题</a>
                         <a href="" class="timu-list-titl-in">填空题</a>
                         <a href="" class="timu-list-titl-right">简答题</a>
                        
-                    </div>
-
+                    </div> -->
                     <div class="timu-list-containt">
                         <div class="error-title">
+                        <span class="choose-problem" style="float: left;">
+                                <span class="down"></span>
+                                <span class="choose-value" data-index="1">全选</span>
+                                <ul class="choose-list">
+                                    <li class="choose-item" data-index="1">单选</li>
+                                    <li class="choose-item" data-index="2">多选</li>
+                                    <li class="choose-item" data-index="3">判断</li>
+                                    <li class="choose-item" data-index="4">填空</li>
+                                    <li class="choose-item" data-index="5">简答</li>
+                                </ul>
+                            </span>
                             <span class="font-style">我的错题集</span>
                             <span class="choose-problem">
                                 <span class="down"></span>
@@ -80,7 +90,6 @@
                                     <li class="choose-item" data-index="1">全部</li>
                                     <li class="choose-item" data-index="2">java工程师</li>
                                     <li class="choose-item" data-index="3">web工程师</li>
-                                    
                                 </ul>
                             </span>
                         </div>
@@ -94,29 +103,52 @@
                 </div>
                 <div class="timu-fenxi">
                     <div class="fenxitimu">
-                        <h3>题目信息:</h3>
-                        <h4>单选题</h4><br>
+                        <div> 
+                            <span class="fenxiHead">题目信息:</span>
+                            <span class="fenxiHeadRight">参考答案:
+                                <span class="answerStan">A</span>
+                            </span>
+                            </h4>
+                            </h3>
+                        </div>
                         <div class="danxuan">
                             <div class="timus">题目:</div>
-                            <div class="timus-content"></div>
+                            <div class="timus-content">我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;</div>
                         </div>
-                        <div class="fenxikuai">
-                        <div class="biaoti">
-                            <div class="fenxikuai-a1">正确答案</div>
-                            <div class="fenxikuai-a3">答案分析</div>
-                        </div>
-                        <div>
-                            <div class="fenxikuai-a2"></div>
-                            <div class="fenxikuai-a4"></div>
-                        </div>
+                        <!-- <div class="fenxikuai">
+                            <div class="biaoti">
+                                <div class="fenxikuai-a3">分析:</div>
+                                <div class="timus-content">我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;</div>
+                            </div>
+                            <div>
+                                <div class="fenxikuai-a2"></div>
+                                <div class="fenxikuai-a4"></div>
+                            </div>
+                        </div> -->
+                        <div class="danxuan">
+                            <div class="timus">分析:</div>
+                            <div class="timus-content">我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;</div>
                         </div>
                     </div>
-                    <div class="fenxi">
-                        <h3>答题信息:</h3>
-                        <div class="fenxi-a1">我的答案</div>
-                        <div class="fenxi-a2"></div>
-                        <div class="fenxi-a4">我的分析</div>
-                        <div class="fenxi-a3"></div>
+                    <div class="fenxitimu">
+                        <div> 
+                            <span class="fenxiHead">答题信息:</span>
+                            <span class="fenxiHeadRight">我的答案:
+                                <span class="answerStan">A</span>
+                            </span>
+                            </h4>
+                            </h3>
+                        </div>
+                        <div class="danxuan">
+                            
+                            <div class="timus">分析:</div>
+                            <div class="rep">
+                                 <div class="timus-content analyse" >我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;我是一个粉刷匠，粉刷本领强，我要把那新房子刷的更漂亮;</div>
+                            </div>
+                           
+                            <div class="cuotibutton"><button type="button" class="btn btn-success edit">编辑</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="clear"></div>
