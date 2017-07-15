@@ -4,16 +4,15 @@
     <title>考试云平台</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <!-- customer styles -->
-    <link rel="stylesheet" type="text/css" href="css/forget.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css.css}">
+    <link rel="stylesheet" type="text/css" href="../static/css/forget.css" th:href="@{/css/forget.css}">
 
 </head>
 
 <body id="login">
     <div id="regWrap">
         <div id="regLogo">
-            <a href="index.html" style="background-image: url(images/1.png)"></a>
+            <a href="index.html" style="background-image: url(/images/1.png)"></a>
         </div>
         
         <div class="find_pwd_box">
@@ -39,7 +38,7 @@
         </div>
 
         <!-- 设置新密码 -->
-<!--         <div class="find_pwd_box2">
+        <div class="find_pwd_box2">
             <h4>设置新密码</h4><br><br>
             <div style="margin-left: 17%;margin-bottom: 5px;">New Password</div>
             <div class="form-group form-new account">
@@ -62,14 +61,14 @@
            <div class="form-group ">
               <input type="button" class="btn " id="reset_pwd_btn" value="提交">
            </div>
-        </div> -->
+        </div>
 
     </div>
 
 
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/forget.js"></script>
+    <script src="../static/js/jquery-2.1.1.js" th:href="@{/js/jquery-2.1.1.js}"></script>
+    <script src="../static/js/bootstrap.min.js" th:href="@{/js/bootstrap.min.js}"></script>
+    <script src="../static/js/forget.js" th:href="@{/js/forget.js}"></script>
 
 
 </body></html>
