@@ -48,16 +48,453 @@
 	            <strong><a href="" class="link-1">SHOW FILTERS</a></strong>
 	        </div>
 	        <div class="box-close">
-			    <span class="glyphicon glyphicon-remove"></span>
+				<span class="glyphicon glyphicon-remove"></span>
 			</div>
 		</div>
 	</div>
 	<div class="overlay-content" style="display: block;"></div>
 
+
+
+
+
+<div class="insert-timu-black">
+	<div class="showview" style="background-color: rgba(0,0,0,0);">
+		<div class="add-title" style="margin-top: 150px;position: absolute;overflow-y: scroll;height: 550px;">
+			<span class="glyphicon glyphicon-remove" style="font-size:20px;color: red;cursor: pointer;position: absolute;right: 5px;top: 5px;" title="关闭"></span>
+			<div style="padding-bottom: 20px;height: 40px;display: flex;">
+				<form action="" method="get"> 
+					<label>请选择职业：</label> 
+					<select name=""> 
+						<option value="1">职业1</option> 
+						<option value="2">职业2</option> 
+					</select> 
+				</form> 
+				<form action="" method="get"> 
+					<label>请选择题目类型：</label> 
+					<select class="title-select" name=""> 
+						<option class="title1" value="1">单选题</option> 
+						<option class="title2" value="2">多选题</option> 
+						<option class="title3" value="3">填空题</option> 
+						<option class="title4" value="4">判断题</option> 
+						<option class="title5" value="5">开放题</option> 
+					</select> 
+				</form>
+				<div class="clear"></div> 
+			</div>
+			<div class="box-title">
+				<div class="box-title1" style="display: block;">
+					<span class="box-tip">题目</span>
+					<span class="box-bewrite">这里填写题目描述</span>
+					<div class="textarea">
+						<div id="danxuan-timu-1"></div>
+						<div id="danxuan-timu"></div>
+					</div>
+					<span class="box-tip">题干</span>
+					<span class="box-bewrite">单/多选题的选项范围从 2 到 6 </span>
+					<br>
+					<div class="keyList">
+						<div class="keyLeft">
+		                    <input type="radio" class="radioOrCheck" name="danxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="danxuan-daan1-1"></div>
+							<div id="danxuan-daan1"></div>
+						</div>
+					</div>
+					<div class="keyList">
+						<div class="keyLeft">
+		                    <input type="radio" class="radioOrCheck" name="danxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="danxuan-daan2-1"></div>
+							<div id="danxuan-daan2"></div>
+						</div>
+					</div>
+					<div class="keyList behide3" id="behide3">
+						<div class="keyLeft">
+		                    <input type="radio" class="radioOrCheck" name="danxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="danxuan-daan3-1"></div>
+							<div id="danxuan-daan3"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide4"  id="behide4">
+						<div class="keyLeft">
+		                    <input type="radio" class="radioOrCheck" name="danxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="danxuan-daan4-1"></div>
+							<div id="danxuan-daan4"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide5"  id="behide5">
+						<div class="keyLeft">
+		                    <input type="radio" class="radioOrCheck" name="danxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="danxuan-daan5-1"></div>
+							<div id="danxuan-daan5"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide6"  id="behide6">
+						<div class="keyLeft">
+		                    <input type="radio" class="radioOrCheck" name="danxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="danxuan-daan6-1"></div>
+							<div id="danxuan-daan6"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="q-submit">
+						<div class="danxuan-add-daan">添加选项</div>
+					</div>
+					<span class="box-tip">解析</span>
+					<span class="box-bewrite">这里填写该问题对应的答案解释</span>
+					<div class="textarea">
+						<div id="danxuan-jiexi-1"></div>
+						<div id="danxuan-jiexi"></div>
+					</div>
+					<div class="q-submit">
+						<input type="submit" value="录入"/>
+					</div>
+				</div>
+				<div class="box-title2">
+					<span class="box-tip">题目</span>
+					<span class="box-bewrite">这里填写题目描述</span>
+					<div class="textarea">
+						<div id="duoxuan-timu-1"></div>
+						<div id="duoxuan-timu"></div>
+					</div>
+					<span class="box-tip">题干</span>
+					<span class="box-bewrite">单/多选题的选项范围从 2 到 6 </span>
+					<div class="keyList">
+						<div class="keyLeft">
+		                    <input type="checkbox" class="radioOrCheck" name="duoxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="duoxuan-daan1-1"></div>
+							<div id="duoxuan-daan1"></div>
+						</div>
+					</div>
+					<div class="keyList">
+						<div class="keyLeft">
+		                    <input type="checkbox" class="radioOrCheck" name="duoxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="duoxuan-daan2-1"></div>
+							<div id="duoxuan-daan2"></div>
+						</div>
+					</div>
+					<div class="keyList behide3" id="behide3">
+						<div class="keyLeft">
+		                    <input type="checkbox" class="radioOrCheck" name="duoxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="duoxuan-daan3-1"></div>
+							<div id="duoxuan-daan3"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide4" id="behide4">
+						<div class="keyLeft">
+		                    <input type="checkbox" class="radioOrCheck" name="duoxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="duoxuan-daan4-1"></div>
+							<div id="duoxuan-daan4"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide5" id="behide5">
+						<div class="keyLeft">
+		                    <input type="checkbox" class="radioOrCheck" name="duoxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="duoxuan-daan5-1"></div>
+							<div id="duoxuan-daan5"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide6" id="behide6">
+						<div class="keyLeft">
+		                    <input type="checkbox" class="radioOrCheck" name="duoxuan" value="">
+		                </div>
+						<div class="textarea">
+							<div id="duoxuan-daan6-1"></div>
+							<div id="duoxuan-daan6"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="q-submit">
+						<div class="duoxuan-add-daan">添加选项</div>
+					</div>
+					<span class="box-tip">解析</span>
+					<span class="box-bewrite">这里填写该问题对应的答案解释</span>
+					<div class="textarea">
+						<div id="duoxuan-jiexi-1"></div>
+						<div id="duoxuan-jiexi"></div>
+					</div>
+					<div class="q-submit">
+						<input type="submit" value="录入"/>
+					</div>
+				</div>
+				<div class="box-title3">
+					<span class="box-tip">题目</span>
+					<span class="box-bewrite">这里填写题目描述</span>
+					<div class="textarea">
+						<div id="tiankong-timu-1"></div>
+						<div id="tiankong-timu"></div>
+					</div>
+					<span class="box-tip">答案</span>
+					<span class="box-bewrite"> 最多设置 6 个填空位置</span>
+					<div class="textarea">
+						<div id="tiankong-daan1-1"></div>
+						<div id="tiankong-daan1"></div>
+					</div>
+					<div class="keyList behide2" id="behide2">
+						<div class="textarea">
+							<div id="tiankong-daan2-1"></div>
+							<div id="tiankong-daan2"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide3" id="behide3">
+						<div class="textarea">
+							<div id="tiankong-daan3-1"></div>
+							<div id="tiankong-daan3"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide4" id="behide4">
+						<div class="textarea">
+							<div id="tiankong-daan4-1"></div>
+							<div id="tiankong-daan4"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide5" id="behide5">
+						<div class="textarea">
+							<div id="tiankong-daan5-1"></div>
+							<div id="tiankong-daan5"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="keyList behide6" id="behide6">
+						<div class="textarea">
+							<div id="tiankong-daan6-1"></div>
+							<div id="tiankong-daan6"></div>
+						</div>
+						<div class="glyphicon glyphicon-remove"></div>
+					</div>
+					<div class="q-submit">
+						<div class="tiankong-add-daan">添加答案</div>
+					</div>
+					<span class="box-tip">解析</span>
+					<span class="box-bewrite">这里填写该问题对应的答案解释</span>
+					<div class="textarea">
+						<div id="tiankong-jiexi-1"></div>
+						<div id="tiankong-jiexi"></div>
+					</div>
+					<div class="q-submit">
+						<input type="submit" value="录入"/>
+					</div>
+				</div>
+				<div class="box-title4">
+					<span class="box-tip">题目</span>
+					<span class="box-bewrite">这里填写题目描述</span>
+					<div class="textarea">
+						<div id="panduan-timu-1"></div>
+						<div id="panduan-timu"></div>
+					</div>
+					<div style="margin-left: 70px;">
+						对：<input type="radio" class="radioOrCheck" name="panduan">
+						错：<input type="radio" class="radioOrCheck" name="panduan">
+					</div>
+					<br>
+					<span class="box-tip">解析</span>
+					<span class="box-bewrite">这里填写该问题对应的答案解释</span>
+					<div class="textarea">
+						<div id="panduan-jiexi-1"></div>
+						<div id="panduan-jiexi"></div>
+					</div>
+					
+					<div class="q-submit">
+						<input type="submit" value="录入"/>
+					</div>
+				</div>
+				<div class="box-title5">
+					<span class="box-tip">题目</span>
+					<span class="box-bewrite">这里填写题目描述</span>
+					<div class="textarea">
+						<div id="kaifang-timu-1"></div>
+						<div id="kaifang-timu"></div>
+					</div>
+					<span class="box-tip">答案</span>
+					<span class="box-bewrite">这里填写答案</span>
+					<div class="textarea">
+						<div id="kaifang-daan1-1"></div>
+						<div id="kaifang-daan1"></div>
+					</div>
+					<span class="box-tip">关键词</span>
+					<span class="box-bewrite">这里添加答案关键词</span>
+					<input type="text" name="key_word" class="guanjianci" placeholder="添加关键词">
+					<br><br>
+					<span class="box-tip">解析</span>
+					<span class="box-bewrite">这里填写该问题对应的答案解释</span>
+					<div class="textarea">
+						<div id="kaifang-jiexi-1"></div>
+						<div id="kaifang-jiexi"></div>
+					</div>
+					<div class="q-submit">
+						<input type="submit" value="录入"/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="add-timu-black">
+		<div class="showview" style="background-color: rgba(0,0,0,0);">
+		<div class="list-view" style="margin-top: 150px;">
+			<div style="padding-bottom: 20px;height: 40px;display: flex;">
+				<form style="width: 95%;">
+					<input type="text">
+					<input type="submit" value="搜索" title="搜索题目信息">
+				</form>
+				<span class="glyphicon glyphicon-remove" style="font-size:20px;color: red;cursor: pointer;" title="关闭"></span>
+			</div>
+			<table>
+				<tr>
+					<th>ID</th>
+					<th>题目信息</th>
+					<th><form action="" method="get"> 
+					<label>难度：</label> 
+						<select class="title-select" name=""> 
+							<option class="title0" value="0">全部难度</option> 
+							<option class="title1" value="1">1</option> 
+							<option class="title2" value="2">2</option> 
+							<option class="title3" value="3">3</option> 
+							<option class="title4" value="4">4</option> 
+						</select> 
+					</form></th>
+					<th>添加</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>4</td>
+					<td>4</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>5</td>
+					<td>5</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>6</td>
+					<td>6</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>7</td>
+					<td>7</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>8</td>
+					<td>8</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>9</td>
+					<td>9</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>11</td>
+					<td>11</td>
+					<td><input class="add-button" type="submit" value="添加"></td>
+				</tr>
+				<tr>
+					<th colspan="4">
+ 						<div id="page" style="height: 32px;"></div>
+					</th>
+				</tr>
+			</table>
+		</div> 
+		</div>
+	</div>
+
 	<div class="showview">
 		<div class="head-view">添加试卷</div>
-		<div class="add-test">
-			
+		<div id="handle">
+			<div class="block__list_words">
+				<ul id="handle-1">
+					<li>
+						<div class="drag-handle">
+							&#9776;
+						</div><div class="handle-timu">
+							
+						</div><div class="timu-info">
+							题目分值：
+							<input type="text">分<br>
+							题目类型：
+							<select class="title-select" name="">
+								<option class="title1" value="1">单选</option> 
+								<option class="title2" value="2">多选</option> 
+								<option class="title3" value="3">填空</option> 
+								<option class="title4" value="4">判断</option> 
+								<option class="title5" value="5">开放题</option> 
+							</select><br>
+							<div class="select-timu">选择题目</div>
+							<div class="insert-timu">录入题目</div>
+							<span class="glyphicon glyphicon-remove" title="删除题目"></span>
+						</div>
+					</li>
+					<div class="add-pro">添加题目</div>
+				</ul>
+			</div>
+			<div class="clear"></div>
 		</div>
 	</div>
 
@@ -111,9 +548,22 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/manage.js"></script>
-<!-- <script src="./js/jquery.jqpagination.js"></script>
+<script src="js/Sortable.min.js"></script>
+<script type="text/javascript" src="js/jquery.page.js"></script>
 <script type="text/javascript" src="wangEditor/wangEditor.min.js"></script>
 <script type="text/javascript">
+	$(function(){
+		$("#page").Page({
+			totalPages: 9,//分页总数
+			liNums: 7,//分页的数字按钮数(建议取奇数)
+			activeClass: 'activP', //active 类样式定义
+			callBack : function(page){
+				//console.log(page)
+			}
+	  	});
+	})
+
+
     var E = window.wangEditor
 
     var editor1 = new E('#danxuan-timu-1','#danxuan-timu')
@@ -207,6 +657,7 @@
 
     var editor29 = new E('#kaifang-jiexi-1','#kaifang-jiexi')
     editor29.create()
-</script> -->
+</script>
+</style>
 </body>
 </html>

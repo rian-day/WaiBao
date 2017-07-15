@@ -101,7 +101,7 @@ ul {
     padding-bottom: 25px;
     position: relative;
     margin-right: -60px;
-    padding: 30px 20px;
+/*    padding: 30px 20px;*/
 }
 
 #page{
@@ -181,3 +181,10 @@ ul {
     border-radius: 5px;
 }
 
+.select-type{
+    width: 30%;
+    height: 50px;
+    border: 1px solid red;
+    margin-left: 3%;
+    margin-top: 1%;
+}
