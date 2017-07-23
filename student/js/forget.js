@@ -120,7 +120,6 @@ $(document).ready(function () {
     }
     $("input[name=captcha_text]").keyup(function () {
         checkVerify($("input[name=captcha_text]"));
-
     })
 
 
